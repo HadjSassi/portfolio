@@ -1,0 +1,35 @@
+/* Remove background and ensure the carousel blends with the design */
+.carousel-item {
+  background: transparent !important;
+}
+
+/* Center text and remove default padding */
+.review-slide {
+  padding: 20px;
+  background: none;
+  box-shadow: none;
+}
+
+/* Remove Bootstrap default background */
+.carousel {
+  background: none !important;
+}
+
+/* Hide controls if only one review exists */
+button.carousel-control-prev,
+button.carousel-control-next {
+  border: none !important;
+  background: none !important;
+  outline: none !important;
+}
+
+/* Customize control icons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1); /* Make arrows visible */
+}
+
+/* Optional: Adjust height for better visibility */
+.carousel-inner {
+  min-height: 250px; /* Adjust as needed */
+}

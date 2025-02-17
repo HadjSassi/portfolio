@@ -6,28 +6,34 @@
     </div>
     <div class="row justify-content-center">
       <div class="col-lg-8">
-        <div class="owl-carousel testimonial-carousel">
-          <div class="text-center">
-            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-            <h4 class="font-weight-light mb-4">Tunis Sports University innove et grâce au travail
-              de notre étudiant Mehdi Haj Sassi, nous avons désormais un nouveau site WEB que vous pouvez
-              désormais consulter et où vous trouverez toutes les informations relatives à notre
-              travail.</h4>
-            <img class="img-fluid rounded-circle mx-auto mb-3" src="img/benabdallahmehdi.jpg"
-                 alt="Mr BEN ABDALLAH Mehdi"
-                 style="width: 80px; height: 80px;">
-            <h5 class="font-weight-bold m-0">BEN ABDALLAH Mehdi</h5>
-            <span>Tunis Sports University Owner</span>
+        <div *ngIf="reviews.length > 0">
+          <!-- Removed data attributes here -->
+          <div id="carouselExampleIndicators" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+              <div *ngFor="let review of reviews; let i = index"
+                   [attr.class]="'carousel-item ' + (i === 0 ? 'active' : '')">
+                <div class="text-center review-slide">
+                  <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
+                  <h4 class="font-weight-light mb-4">{{ review.text }}</h4>
+                  <img class="img-fluid rounded-circle mx-auto mb-3"
+                       [src]="review.image" alt="{{ review.name }}" style="width: 80px; height: 80px;">
+                  <h5 class="font-weight-bold m-0">{{ review.name }}</h5>
+                  <span>{{ review.position }}</span>
+                </div>
+              </div>
+            </div>
+            <button *ngIf="reviews.length > 1" class="carousel-control-prev border-0"
+                    type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button *ngIf="reviews.length > 1" class="carousel-control-next border-0"
+                    type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
           </div>
-          <div class="text-center">
-            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-            <h4 class="font-weight-light mb-4">good job done by mahdi</h4>
-            <img class="img-fluid rounded-circle mx-auto mb-3" alt="Saoudite Client"
-                 src="https://cdn5.f-cdn.com/ppic/229851141/logo/19416088/Jmk41/CROPPED_profile_logo_UXUJC_16ada05214aa9a815c6159c4ab557994.jpeg?image-optimizer=force&format=webply&width=336"
-                 style="width: 80px; height: 80px;">
-            <h5 class="font-weight-bold m-0">Naif A</h5>
-            <span>Professional Engineer</span>
-          </div>
+        </div>
+        <div *ngIf="reviews.length === 0" class="text-center">
+          <p>No testimonials available.</p>
         </div>
       </div>
     </div>
