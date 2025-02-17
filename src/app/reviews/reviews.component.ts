@@ -1,5 +1,16 @@
-import { Component, AfterViewInit } from '@angular/core';
+import { AfterViewInit, Component, Renderer2 } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import {HttpClient} from '@angular/common/http';
+import {Observable} from 'rxjs';
+
+declare var bootstrap: any;
+
+interface Review {
+  text: string;
+  image: string;
+  name: string;
+  position: string;
+}
 
 @Component({
   selector: 'app-reviews',
@@ -8,21 +19,25 @@ import { CommonModule } from '@angular/common';
   templateUrl: './reviews.component.html',
   styleUrls: ['./reviews.component.css']
 })
-export class ReviewsComponent {
-  reviews = [
-    {
-      text: "Tunis Sports University innove et grâce au travail de notre étudiant Mehdi Haj Sassi...",
-      image: "/img/benabdallahmehdi.jpg",
-      name: "BEN ABDALLAH Mehdi",
-      position: "Tunis Sports University Owner"
-    },
-    {
-      text: "Good job done by Mahdi",
-      image: "https://cdn5.f-cdn.com/ppic/229851141/logo/19416088/Jmk41/CROPPED_profile_logo_UXUJC_16ada05214aa9a815c6159c4ab557994.jpeg?image-optimizer=force&format=webply&width=336",
-      name: "Naif A",
-      position: "Professional Engineer"
-    }
-  ];
+export class ReviewsComponent implements AfterViewInit {
+  reviews: Review[] = [];
 
+  constructor(private http: HttpClient) {}
 
+  ngAfterViewInit() {
+    this.fetchReviews().subscribe(data => {
+      this.reviews = data.reviews;
+
+      const carouselElement = document.getElementById('carouselExampleIndicators');
+      const carousel = new bootstrap.Carousel(carouselElement, {
+        interval: 3000,  // 3 seconds automatic transition
+        wrap: true,      // Wrap around when reaching the end
+        ride: 'carousel' // Ensures the carousel auto-cycles when the page is ready
+      });
+    });
+  }
+
+  fetchReviews(): Observable<{ reviews: Review[] }> {
+    return this.http.get<{ reviews: Review[] }>('data/reviews.json');
+  }
 }
