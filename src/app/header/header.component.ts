@@ -1,11 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
+import { NgxTypedJsModule } from 'ngx-typed-js';
+import {TypedTextComponent} from '../typed-text/typed-text.component';
 
 @Component({
   selector: 'app-header',
-  imports: [],
+  standalone: true,
+  imports: [NgxTypedJsModule, TypedTextComponent],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.css'
+  styleUrls: ['./header.component.css']
 })
-export class HeaderComponent {
+export class HeaderComponent implements AfterViewInit {
+  showTypedText = false;
 
+  ngAfterViewInit() {
+    setTimeout(() => {
+      this.showTypedText = true; // Allow time for DOM to render
+    }, 0);
+  }
 }
