@@ -1,0 +1,25 @@
+.navbar-hidden {
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-visible {
+  transform: translateY(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-item {
+  margin: 0 10px;
+}
+
+.navbar {
+  align-items: center;
+}
+
+.nav-link {
+  color: gray; /* Default color for links */
+}
+
+.nav-link.active {
+  color: blue; /* Active link color */
+}
