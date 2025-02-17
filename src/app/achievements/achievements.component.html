@@ -6,179 +6,22 @@
     </div>
     <div class="row align-items-center">
       <div class="col">
-        <h3 class="mb-4">Computer Science</h3>
-        <div class="border-left border-primary pt-2 pl-4 ml-2">
-          <div class="position-relative mb-4">
-            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-            <h5 class="font-weight-bold mb-1">AI Night Challenge 3rd Edition</h5>
-            <p class="mb-2"><strong><a target="_blank" href="https://www.novationcity.com/">Novation
-              City</a></strong> | <small>24/06/2024</small></p>
-            <p>
-              Won the prize in the <a href="https://arsii.org/">ARSII</a> Data Science Contest with the
-              project "SmartEval: Système
-              d'Évaluation Intelligente pour un Apprentissage Interactif." This marked the user's third
-              participation, showcasing expertise in developing intelligent and interactive learning
-              evaluation systems in collaboration with another team.
-              <br>
-              <a target="_blank" href="portfolio/Achievements/ARSII3/index.html">Check Media</a>
-            </p>
+        <div *ngFor="let category of achievements">
+          <h3 class="mb-4">{{ category.category }}</h3>
+          <div class="border-left border-primary pt-2 pl-4 ml-2">
+            <div *ngFor="let item of category.items" class="position-relative mb-4">
+              <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
+              <h5 class="font-weight-bold mb-1">{{ item.title }}</h5>
+              <p class="mb-2">
+                <strong><a target="_blank" [href]="item.link">{{ item.location }}</a></strong> |
+                <small>{{ item.date }}</small>
+              </p>
+              <p [innerHTML]="item.description"></p>
+              <p>
+                <a target="_blank" [href]="item.mediaLink">Check Media</a>
+              </p>
+            </div>
           </div>
-          <div class="position-relative mb-4">
-            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-            <h5 class="font-weight-bold mb-1">IEEE CS TSYP11 : 2nd Prize</h5>
-            <p class="mb-2"><strong><a target="_blank"
-                                       href="https://www.diarlemdina.medinahotelsandresorts.com/">Diar El
-              Medina Hammamet Hotel</a></strong> | <small>18/12/2023</small></p>
-            <p>Secured 2nd prize in the TSYP 11 IEEE CS Challenge for the project <a
-              target="_blank"
-              href="https://scontent-cdg4-3.xx.fbcdn.net/v/t39.30808-6/387869074_650693227211598_4749270063989888951_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=pc2--rTICmgQ7kNvgGhdBot&_nc_zt=23&_nc_ht=scontent-cdg4-3.xx&_nc_gid=AWJprDqSBRpVS2N_jhDzaWH&oh=00_AYBG-QgQjtOIEPrCIwpgXsze7L-RvSvDliDK7x4PhTHDwQ&oe=679C18AE">"Deep-fake
-              Forensics TSYP11 CS."</a> Led the team to achieve the first-ever prize for the IEEE ENSIT
-              Student Branch.
-              Demonstrated expertise in AI-based deepfake detection techniques. Played a pivotal role in
-              team leadership and project execution.
-              <br><a target="_blank" href="portfolio/TSYP11_CS_Challenge.pdf">Check the report</a> <a
-                target="_blank" href="portfolio/Achievements/tsyp11%20ieee%20cs/index.html">Check Media</a>
-
-            </p>
-          </div>
-          <div class="position-relative mb-4">
-            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-            <h5 class="font-weight-bold mb-1">AI Night Challenge 2nd Edition</h5>
-            <p class="mb-2"><strong><a target="_blank" href="https://www.novationcity.com/">Novation
-              City</a></strong> | <small>11/06/2023</small></p>
-            <p>
-              Won the prize in the <a href="https://arsii.org/">ARSII</a> Data Science Contest with the
-              project "AI News Radar" by <a href="https://www.pristiniaiuniversity.tn/en">Pristini The AI
-              Univesity</a> This marked the user's second
-              participation, the contest consist of developing an application that allows users to
-              check for the recent AI related news. I've used web scrapping and machine learning to
-              predict
-              the veracity of the news, then displaying in the Streamlit web application.
-              <br>
-              <a target="_blank" href="portfolio/Achievements/ARSII2/index.html">Check Media</a>
-            </p>
-          </div>
-          <div class="position-relative mb-4">
-            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-            <h5 class="font-weight-bold mb-1">IEEE ESSTHS : Game On</h5>
-            <p class="mb-2"><strong><a target="_blank"
-                                       href="https://essths.rnu.tn/public/">ESSTHS</a></strong> | <small>11/12/2022</small>
-            </p>
-            <p>
-              Achieved 2nd place in the <a href="https://essths.ieee.tn/">IEEE ESSTHS</a> Game Development
-              Contest by creating a 3D survival
-              shooter game. Developed the game within 8 hours using templates and examples, showcasing
-              quick adaptability and creativity under time constraints.
-              <br>
-              <a target="_blank" href="portfolio/Achievements/IEEE%20essths%20game%20on/index.html">Check Media</a>
-            </p>
-          </div>
-          <div class="position-relative mb-4">
-            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-            <h5 class="font-weight-bold mb-1">GEEKS Hack 2.0</h5>
-            <p class="mb-2"><strong><a target="_blank"
-                                       href="https://www.ensitgeeksclub.com">ENSIT Geeks Club</a></strong> |
-              <small>19/11/2022</small>
-            </p>
-            <p>
-              Scared To Compile team earned 2nd place in the 24-hour Hackathon organized by the ENSIT
-              Geeks Club, demonstrating
-              strong problem-solving skills and effective performance under time pressure.
-              <br>
-              <a target="_blank" href="portfolio/Achievements/Geeks%20hack%202.0/index.html">Check Media</a>
-            </p>
-          </div>
-          <div class="position-relative mb-4">
-            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-            <h5 class="font-weight-bold mb-1">IEEEXtreme 16.0</h5>
-            <p class="mb-2"><strong><a target="_blank"
-                                       href="https://ensit.ieee.tn">IEEE Ensit SB</a></strong> |
-              <small>28/10/2022</small>
-            </p>
-            <p>
-              With team Keranis, earned the title of Second Best Team at ENSIT and ranked among the top 70
-              teams
-              in the Tunisia Section during the <a target="_blank"
-                                                   href="https://ieeextreme.org/ieeextreme-16-0-ranking/">IEEEXtreme
-              16.0</a> programming competition, showcasing
-              exceptional coding and teamwork skills.
-            </p>
-          </div>
-          <div class="position-relative mb-4">
-            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-            <h5 class="font-weight-bold mb-1">IEEE FST Hackathon</h5>
-            <p class="mb-2"><strong><a target="_blank"
-                                       href="http://www.cst.rnu.tn/">
-              City of science of Tunisia</a>
-            </strong>|<small>11/04/2021</small>
-            </p>
-            <p>
-              Achieved 2nd place in the 24-hour problem-solving Hackathon organized by <a target="_blank"
-                                                                                          href="https://fst.ieee.tn/">IEEE
-              FST</a> at the
-              City of Science in Tunis, demonstrating strong analytical and collaborative skills under
-              pressure.
-              <br>
-              <a target="_blank" href="portfolio/Achievements/FST%20hackathon/index.html">Check Media</a>
-            </p>
-          </div>
-
-        </div>
-        <h3 class="mb-4">Entrepreneurial</h3>
-        <div class="border-left border-primary pt-2 pl-4 ml-2">
-          <div class="position-relative mb-4">
-            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-            <h5 class="font-weight-bold mb-1">Best Scientific Article for IEEE Tunisia Seciton 2023 </h5>
-            <p class="mb-2"><strong><a target="_blank"
-                                       href="https://www.diarlemdina.medinahotelsandresorts.com/">Diar El
-              Medina Hammamet Hotel</a></strong> | <small>19/12/2023</small></p>
-            <p>Won the <a target="_blank" href="https://ieeer8.org/category/student-activities/sa-spc/">IEEE
-              Tunisia Section
-              Student Paper Contest 2023</a> with the paper titled "Implementation
-              for Data Science Aspect on the U-Book App." The paper highlighted innovative data science
-              integration in application development.
-              <br>Competed among top student researchers in Tunisia.
-              Award included certification, TSYP Congress registration, and qualification for the IEEE
-              Region 8 SPC.
-              <br><a target="_blank"
-                     href="https://www.facebook.com/ieee.tsyp/posts/dear-community-hurry-up-and-join-in-on-the-ieee-tunisia-section-student-paper-co/659982196282701/">Link
-                for the Competition</a> <a target="_blank" href="portfolio/papierScientifique.pdf">Check
-                the paper</a> <a target="_blank" href="portfolio/Achievements/ieee%20spc/index.html">Check Media</a>
-            </p>
-          </div>
-          <div class="position-relative mb-4">
-            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-            <h5 class="font-weight-bold mb-1">PEEC Innov'Startup 2.0 Final</h5>
-            <p class="mb-2"><strong><a target="_blank"
-                                       href="https://www.supcom.tn/">
-              Sup'Com</a></strong> | <small>13/06/2022</small></p>
-            <p>
-              Participated in the <a
-              href="https://www.projet-saleem.org/lancement-du-concours-carthage-innovsrartup-2-0/">Innov'startup
-              2.0</a> entrepreneurship competition organized by the Pôle
-              Étudiant Entrepreneur de Carthage (<a href="https://ucar.rnu.tn/peec/">PEEC</a>) with the
-              Ubook project. Successfully advanced
-              through all qualification stages and reached the final, where they placed 5th out of 120
-              projects. The final took place at Sup'Com, with the semifinals held at <a
-              href="https://insat.rnu.tn/">INSAT</a>.
-              <br><a target="_blank" href="portfolio/Achievements/peec/index.html">Check Media</a>
-            </p>
-          </div>
-          <div class="position-relative mb-4">
-            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-            <h5 class="font-weight-bold mb-1">EFE Contest</h5>
-            <p class="mb-2"><strong><a target="_blank"
-                                       href="https://www.fsb.rnu.tn">
-              FSB</a></strong> | <small>15/11/2020</small></p>
-            <p>
-              Competed in the <a target="_blank" href="https://www.efe.org/">EFE</a> entrepreneurship
-              contest, winning the first qualification to the finals
-              and securing 4th place in the final round, demonstrating strong entrepreneurial skills and
-              innovative thinking.
-              <br><a target="_blank" href="portfolio/Achievements/efe/index.html">Check Media</a>
-            </p>
-          </div>
-
         </div>
       </div>
     </div>
