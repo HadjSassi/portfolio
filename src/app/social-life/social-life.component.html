@@ -5,85 +5,12 @@
       <h1 class="position-absolute text-uppercase text-primary">Social Life</h1>
     </div>
     <div class="row custom-image-section">
-      <div  onclick="window.open('./portfolio/social/Presenting%20Tunisia/index.html', '_blank');" class="col-lg-4 mb-5">
+      <div *ngFor="let activity of socialActivities" class="col-lg-4 mb-5" (click)="openLink(activity.link)">
         <div class="position-relative mb-4">
-          <img class="img-fluid rounded w-100" src="portfolio/social/Presenting%20Tunisia/img/0.jpg" alt="">
+          <img class="img-fluid rounded w-100" [src]="activity.image" [alt]="activity.title">
         </div>
-        <h5 class="font-weight-medium mb-4">ENSIT and Tunisia Ambassador in France</h5>
+        <h5 class="font-weight-medium mb-4">{{ activity.title }}</h5>
       </div>
-      <div  onclick="window.open('./portfolio/social/Voyage%20d\'etude/index.html', '_blank');" class="col-lg-4 mb-5">
-        <div class="position-relative mb-4">
-          <img class="img-fluid rounded w-100" src="portfolio/social/Voyage%20d'etude/img/0.jpg" alt="">
-        </div>
-        <h5 class="font-weight-medium mb-4">ENSIT Computer Science Responsable</h5>
-      </div>
-      <div  onclick="window.open('./portfolio/social/Insight%20of%20Ensit2/index.html', '_blank');" class="col-lg-4 mb-5">
-        <div class="position-relative mb-4">
-          <img class="img-fluid rounded w-100" src="portfolio/social/Insight%20of%20Ensit2/img/1.jpg" alt="">
-        </div>
-        <h5 class="font-weight-medium mb-4">Insight Of ENSIT 9.0 Presenter</h5>
-      </div>
-      <div  onclick="window.open('./portfolio/social/ambassador/index.html', '_blank');" class="col-lg-4 mb-5">
-        <div class="position-relative mb-4">
-          <img class="img-fluid rounded w-100" src="portfolio/social/Ambassador/img/6.jpg" alt="">
-        </div>
-        <h5 class="font-weight-medium mb-4">Events Ambassador</h5>
-      </div>
-      <div  onclick="window.open('./portfolio/social/IEEEXtreme17/index.html', '_blank');" class="col-lg-4 mb-5">
-        <div class="position-relative mb-4">
-          <img class="img-fluid rounded w-100" src="portfolio/social/IEEEXtreme17/img/0.jpg" alt="">
-        </div>
-        <h5 class="font-weight-medium mb-4">IEEEXtreme17.0 ENSIT Manager</h5>
-      </div>
-      <div  onclick="window.open('./portfolio/social/IEEE%20101/index.html', '_blank');" class="col-lg-4 mb-5">
-        <div class="position-relative mb-4">
-          <img class="img-fluid rounded w-100" src="portfolio/social/IEEE%20101/img/0.jpg" alt="">
-        </div>
-        <h5 class="font-weight-medium mb-4">IEEE 101 Bel tounsy Editor and Presenter</h5>
-      </div>
-      <div  onclick="window.open('./portfolio/social/IEEE%20CS%20Chair/index.html', '_blank');" class="col-lg-4 mb-5">
-        <div class="position-relative mb-4">
-          <img class="img-fluid rounded w-100" src="portfolio/social/IEEE%20CS%20Chair/img/0.jpg" alt="">
-        </div>
-        <h5 class="font-weight-medium mb-4">IEEE CS ENSIT SBC CHAIR </h5>
-      </div>
-      <div  onclick="window.open('./portfolio/social/Geeks%20Project%20Manager/index.html', '_blank');" class="col-lg-4 mb-5">
-        <div class="position-relative mb-4">
-          <img class="img-fluid rounded w-100" src="portfolio/social/Geeks%20Project%20Manager/img/0.jpg" alt="">
-        </div>
-        <h5 class="font-weight-medium mb-4">ENSIT GEEKS CLUB Project Manager</h5>
-      </div>
-      <div  onclick="window.open('./portfolio/social/Enactus%20Ensit/index.html', '_blank');" class="col-lg-4 mb-5">
-        <div class="position-relative mb-4">
-          <img class="img-fluid rounded w-100" src="portfolio/social/Enactus%20Ensit/img/0.jpg" alt="">
-        </div>
-        <h5 class="font-weight-medium mb-4">ENACTUS ENSIT Marketing Manager</h5>
-      </div>
-      <div  onclick="window.open('./portfolio/social/ATIA%20ML/index.html', '_blank');" class="col-lg-4 mb-5">
-        <div class="position-relative mb-4">
-          <img class="img-fluid rounded w-100" src="portfolio/social/ATIA%20ML/img/0.jpg" alt="">
-        </div>
-        <h5 class="font-weight-medium mb-4">ATIA Machine Learning Bootcamp Participant</h5>
-      </div>
-      <div  onclick="window.open('./portfolio/social/Oxfam/index.html', '_blank');" class="col-lg-4 mb-5">
-        <div class="position-relative mb-4">
-          <img class="img-fluid rounded w-100" src="portfolio/social/Oxfam/img/0.jpg" alt="">
-        </div>
-        <h5 class="font-weight-medium mb-4">Oxfam Social Entrepreneurship Bootcamp Participant </h5>
-      </div>
-      <div  onclick="window.open('./portfolio/social/FSB%20Integration%20Day/index.html', '_blank');" class="col-lg-4 mb-5">
-        <div class="position-relative mb-4">
-          <img class="img-fluid rounded w-100" src="portfolio/social/FSB%20Integration%20Day/img/0.jpg" alt="">
-        </div>
-        <h5 class="font-weight-medium mb-4">FSB Computer Science departement Integration Day, Organizer and Presenter </h5>
-      </div>
-      <div  onclick="window.open('./portfolio/social/Enactus%20FSB%20and%204C/index.html', '_blank');" class="col-lg-4 mb-5">
-        <div class="position-relative mb-4">
-          <img class="img-fluid rounded w-100" src="portfolio/social/Enactus%20FSB%20and%204C/img/0.jpg" alt="">
-        </div>
-        <h5 class="font-weight-medium mb-4">ENACTUS & 4C FSB Member</h5>
-      </div>
-
     </div>
   </div>
 </div>

@@ -1,0 +1,69 @@
+{
+  "socialActivities": [
+    {
+      "title": "ENSIT and Tunisia Ambassador in France",
+      "image": "/portfolio/social/Presenting%20Tunisia/img/0.jpg",
+      "link": "./portfolio/social/Presenting%20Tunisia/index.html"
+    },
+    {
+      "title": "ENSIT Computer Science Responsable",
+      "image": "/portfolio/social/Voyage%20d'etude/img/0.jpg",
+      "link": "./portfolio/social/Voyage%20d'etude/index.html"
+    },
+    {
+      "title": "Insight Of ENSIT 9.0 Presenter",
+      "image": "/portfolio/social/Insight%20of%20Ensit2/img/1.jpg",
+      "link": "./portfolio/social/Insight%20of%20Ensit2/index.html"
+    },
+    {
+      "title": "Events Ambassador",
+      "image": "/portfolio/social/Ambassador/img/6.jpg",
+      "link": "./portfolio/social/ambassador/index.html"
+    },
+    {
+      "title": "IEEEXtreme17.0 ENSIT Manager",
+      "image": "/portfolio/social/IEEEXtreme17/img/0.jpg",
+      "link": "./portfolio/social/IEEEXtreme17/index.html"
+    },
+    {
+      "title": "IEEE 101 Bel tounsy Editor and Presenter",
+      "image": "/portfolio/social/IEEE%20101/img/0.jpg",
+      "link": "./portfolio/social/IEEE%20101/index.html"
+    },
+    {
+      "title": "IEEE CS ENSIT SBC CHAIR",
+      "image": "/portfolio/social/IEEE%20CS%20Chair/img/0.jpg",
+      "link": "./portfolio/social/IEEE%20CS%20Chair/index.html"
+    },
+    {
+      "title": "ENSIT GEEKS CLUB Project Manager",
+      "image": "/portfolio/social/Geeks%20Project%20Manager/img/0.jpg",
+      "link": "./portfolio/social/Geeks%20Project%20Manager/index.html"
+    },
+    {
+      "title": "ENACTUS ENSIT Marketing Manager",
+      "image": "/portfolio/social/Enactus%20Ensit/img/0.jpg",
+      "link": "./portfolio/social/Enactus%20Ensit/index.html"
+    },
+    {
+      "title": "ATIA Machine Learning Bootcamp Participant",
+      "image": "/portfolio/social/ATIA%20ML/img/0.jpg",
+      "link": "./portfolio/social/ATIA%20ML/index.html"
+    },
+    {
+      "title": "Oxfam Social Entrepreneurship Bootcamp Participant",
+      "image": "/portfolio/social/Oxfam/img/0.jpg",
+      "link": "./portfolio/social/Oxfam/index.html"
+    },
+    {
+      "title": "FSB Computer Science Department Integration Day, Organizer and Presenter",
+      "image": "/portfolio/social/FSB%20Integration%20Day/img/0.jpg",
+      "link": "./portfolio/social/FSB%20Integration%20Day/index.html"
+    },
+    {
+      "title": "ENACTUS & 4C FSB Member",
+      "image": "/portfolio/social/Enactus%20FSB%20and%204C/img/0.jpg",
+      "link": "./portfolio/social/Enactus%20FSB%20and%204C/index.html"
+    }
+  ]
+}
