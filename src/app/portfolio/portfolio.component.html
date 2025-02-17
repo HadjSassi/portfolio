@@ -7,91 +7,29 @@
     <div class="row">
       <div class="col-12 text-center mb-2">
         <ul class="list-inline mb-4" id="portfolio-flters">
-          <li class="btn btn-sm btn-outline-primary m-1 active" data-filter="*">All</li>
-          <li class="btn btn-sm btn-outline-primary m-1" data-filter=".first">Web App</li>
-          <li class="btn btn-sm btn-outline-primary m-1" data-filter=".second">Game App</li>
-          <li class="btn btn-sm btn-outline-primary m-1" data-filter=".third">DataScience</li>
+          <li class="btn btn-sm btn-outline-primary m-1 active" (click)="filterPortfolio('*')">All</li>
+          <li class="btn btn-sm btn-outline-primary m-1" (click)="filterPortfolio('first')">Web App</li>
+          <li class="btn btn-sm btn-outline-primary m-1" (click)="filterPortfolio('second')">Game App</li>
+          <li class="btn btn-sm btn-outline-primary m-1" (click)="filterPortfolio('third')">DataScience</li>
         </ul>
       </div>
     </div>
     <div class="row portfolio-container">
-      <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+      <div *ngFor="let item of filteredItems"
+           [ngClass]="['col-lg-4', 'col-md-6', 'mb-4', 'portfolio-item', item.category]"
+           @fadeInOut>
         <div class="position-relative overflow-hidden mb-2">
-          <img class="img-fluid rounded w-100" src="img/tsu.png" alt="Tunis Sports University">
+          <img class="img-fluid rounded w-100" [src]="item.image" [alt]="item.name">
           <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-            <a onclick='window.open("https://www.tunissportsuniversity.tn/","_blank");' href="img/tsu.png"
-               data-lightbox="portfolio">
-              <i class="fa fa-search text-white" style="font-size: 60px;"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
-        <div class="position-relative overflow-hidden mb-2">
-          <img class="img-fluid rounded w-100" src="img/arsii2.png" alt="IEEE typo">
-          <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-            <a onclick='window.open("portfolio/arsii/FrontEnd/index.html","_blank");'
-               href="img/arsii2.png" data-lightbox="portfolio">
-              <i class="fa fa-search text-white" style="font-size: 60px;"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
-        <div class="position-relative overflow-hidden mb-2">
-          <img class="img-fluid rounded w-100" src="img/geeks.png" alt="ensit geeks club">
-          <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-            <a onclick='window.open("https://www.ensitgeeksclub.com/","_blank");' href="img/geeks.png"
-               data-lightbox="portfolio">
-              <i class="fa fa-search text-white" style="font-size: 60px;"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
-        <div class="position-relative overflow-hidden mb-2">
-          <img class="img-fluid rounded w-100" src="img/ensitVirtual.png" alt="Ensit virtual">
-          <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-            <a onclick='window.open("https://www.youtube.com/watch?v=5U60PzaPS3I","_blank");'
-               href="img/ensitVirtual.png" data-lightbox="portfolio">
-              <i class="fa fa-search text-white" style="font-size: 60px;"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
-        <div class="position-relative overflow-hidden mb-2">
-          <img class="img-fluid rounded w-100" src="img/pristini.png" alt="AI news RAdar">
-          <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-            <a href="portfolio/AINewsRadar/AI%20News%20Radar.avi" data-lightbox="portfolio">
-              <i class="fa fa-search text-white" style="font-size: 60px;"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
-        <div class="position-relative overflow-hidden mb-2">
-          <img class="img-fluid rounded w-100" src="img/ieee.png" alt="IEEE Ensit">
-          <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-            <a onclick='window.open("portfolio/IEEE.ENSIT.TN/index.html","_blank");' href="img/ieee.png"
-               data-lightbox="portfolio">
-              <i class="fa fa-search text-white" style="font-size: 60px;"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
-        <div class="position-relative overflow-hidden mb-2">
-          <img class="img-fluid rounded w-100" src="img/ieeetypo.png" alt="IEEE typo">
-          <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-            <a onclick='window.open("https://ensit.ieee.tn/unit/cs/cs-game/typo1.0/index.php","_blank");'
-               href="img/ieeetypo.png" data-lightbox="portfolio">
+            <a (click)="openLink(item.link)" href="javascript:void(0);" data-lightbox="portfolio">
               <i class="fa fa-search text-white" style="font-size: 60px;"></i>
             </a>
           </div>
         </div>
       </div>
     </div>
+
   </div>
 </div>
+
+
