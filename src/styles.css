@@ -9808,6 +9808,7 @@ h6,
 }
 
 .scroll-to-bottom {
+  cursor: pointer;
   position: fixed;
   width: 20px;
   left: calc(50% - 10px);
@@ -9819,6 +9820,7 @@ h6,
 
 .back-to-top {
   position: fixed;
+  cursor: pointer;
   width: 50px; /* Set width */
   height: 50px; /* Set height to match width for circular shape */
   text-align: center;

@@ -17,9 +17,11 @@
 }
 
 .nav-link {
-  color: gray; /* Default color for links */
+  color: gray;
+  transition: color 0.3s;
 }
 
 .nav-link.active {
-  color: blue; /* Active link color */
+  color: blue;
+  font-weight: bold;
 }

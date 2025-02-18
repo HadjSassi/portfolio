@@ -12,15 +12,15 @@ import {ReviewsComponent} from './reviews/reviews.component';
 
 export const routes: Routes = [
   { path: 'home', component: HomeComponent },
-  { path: 'about', component: AboutComponent },
-  { path: 'qualification', component: ExperienceComponent },
-  { path: 'skill', component: SkillsComponent },
-  { path: 'service', component: ServicesComponent },
-  { path: 'portfolio', component: PortfolioComponent },
-  { path: 'portfolio', component: PortfolioComponent },
-  { path: 'achievements', component: AchievementsComponent },
-  { path: 'social', component: SocialLifeComponent },
-  { path: 'testimonial', component:  ReviewsComponent},
+  // { path: 'about', component: AboutComponent },
+  // { path: 'qualification', component: ExperienceComponent },
+  // { path: 'skill', component: SkillsComponent },
+  // { path: 'service', component: ServicesComponent },
+  // { path: 'portfolio', component: PortfolioComponent },
+  // { path: 'portfolio', component: PortfolioComponent },
+  // { path: 'achievements', component: AchievementsComponent },
+  // { path: 'social', component: SocialLifeComponent },
+  // { path: 'testimonial', component:  ReviewsComponent},
   { path: '', redirectTo: '/home', pathMatch: 'full' },
 ];
 

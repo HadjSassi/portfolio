@@ -1,3 +1,4 @@
+<!-- navbar.component.html -->
 <nav [ngClass]="{'navbar-visible': isNavbarVisible, 'navbar-hidden': !isNavbarVisible}"
      class="fixed-top shadow-sm navbar-expand-lg bg-light py-3 px-lg-5 d-flex justify-content-between">
   <a routerLink="/home" class="navbar-brand ml-lg-3">
@@ -8,15 +9,15 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarCollapse">
     <div class="navbar-nav m-auto d-flex justify-content-center">
-      <a routerLink="/home" class="nav-item nav-link" routerLinkActive="active">Home</a>
-      <a routerLink="/about" class="nav-item nav-link"routerLinkActive="active">About</a>
-      <a routerLink="/qualification" class="nav-item nav-link" routerLinkActive="active">Experience</a>
-      <a routerLink="/skill" class="nav-item nav-link" routerLinkActive="active">Skill</a>
-      <a routerLink="/service" class="nav-item nav-link" routerLinkActive="active">Service</a>
-      <a routerLink="/portfolio" class="nav-item nav-link" routerLinkActive="active">Portfolio</a>
-      <a routerLink="/achievements" class="nav-item nav-link" routerLinkActive="active">Achievements</a>
-      <a routerLink="/social" class="nav-item nav-link" routerLinkActive="active">Social Life</a>
-      <a routerLink="/testimonial" class="nav-item nav-link" routerLinkActive="active">Review</a>
+      <a routerLink="/home" fragment="home" class="nav-item nav-link" [ngClass]="{'active': isActive('home')}">Home</a>
+      <a routerLink="/home" fragment="about" class="nav-item nav-link" [ngClass]="{'active': isActive('about')}">About</a>
+      <a routerLink="/home" fragment="experience" class="nav-item nav-link" [ngClass]="{'active': isActive('experience')}">Experience</a>
+      <a routerLink="/home" fragment="skill" class="nav-item nav-link" [ngClass]="{'active': isActive('skill')}">Skill</a>
+      <a routerLink="/home" fragment="service" class="nav-item nav-link" [ngClass]="{'active': isActive('service')}">Service</a>
+      <a routerLink="/home" fragment="portfolio" class="nav-item nav-link" [ngClass]="{'active': isActive('portfolio')}">Portfolio</a>
+      <a routerLink="/home" fragment="achievement" class="nav-item nav-link" [ngClass]="{'active': isActive('achievement')}">Achievements</a>
+      <a routerLink="/home" fragment="social" class="nav-item nav-link" [ngClass]="{'active': isActive('social')}">Social Life</a>
+      <a routerLink="/home" fragment="review" class="nav-item nav-link" [ngClass]="{'active': isActive('review')}">Review</a>
     </div>
     <a href="mailto:mahdihadjsassi1@gmail.com" class="btn btn-outline-primary d-none d-lg-block">Hire Me</a>
   </div>
