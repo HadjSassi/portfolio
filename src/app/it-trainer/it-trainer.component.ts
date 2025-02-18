@@ -23,8 +23,6 @@ export class ItTrainerComponent implements OnInit{
   titleArticle: string = "Training";
   trainings = trainerData.trainings;
 
-  ngOnInit() {
-    console.log(this.trainings);
-  }
+  ngOnInit() {}
 
 }
