@@ -9,7 +9,6 @@ import {PortfolioComponent} from '../portfolio/portfolio.component';
 import {AchievementsComponent} from '../achievements/achievements.component';
 import {SocialLifeComponent} from '../social-life/social-life.component';
 import {ReviewsComponent} from '../reviews/reviews.component';
-import {ContactComponent} from '../contact/contact.component';
 import {CommonModule} from '@angular/common';
 import {ActivatedRoute, Router} from '@angular/router';
 
@@ -26,7 +25,6 @@ import {ActivatedRoute, Router} from '@angular/router';
     AchievementsComponent,
     SocialLifeComponent,
     ReviewsComponent,
-    ContactComponent,
     CommonModule
   ],
   templateUrl: './home.component.html',

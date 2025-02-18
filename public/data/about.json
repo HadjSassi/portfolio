@@ -9,8 +9,31 @@
   "freelance": "Available",
   "links": {
     "linkedin": "https://www.linkedin.com/in/mahdi-hadj-sassi/",
-    "github": "https://github.com/HadjSassi"
+    "github": "https://github.com/HadjSassi",
+    "facebook": "https://www.facebook.com/HadjSassiMahdiEzzedine",
+    "instagram": "https://www.instagram.com/hadj_sassi.ezzedine.mahdi/"
   },
   "description": "I am a highly motivated and versatile engineering student currently pursuing a dual degree program between the École Nationale Supérieure d'Ingénieurs de Tunis (ENSIT) and the École Nationale Supérieure de l'Électronique et de ses Applications (ENSEA) in France. With a strong foundation in software development, artificial intelligence, and embedded systems, I have consistently excelled in both academic and extracurricular pursuits.",
-  "image": "about3.png"
+  "image": "about3.png",
+  "profileImage": "profile.png",
+  "videoIframe": "<iframe width='560' height='315' src='https://www.youtube.com/embed/cXCgT-_6474?si=_KxtLToxJtPxymkP' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>",
+  "footer": {
+    "message": "&copy;HADJ SASSI. All Rights Reserved. Designed by HADJ SASSI Mahdi"
+  },
+  "introduction": {
+    "heading": "I am",
+    "name": "HADJ SASSI Mahdi",
+    "typedStrings": [
+      "Web Developer ",
+      "Desktop App Developer ",
+      "Mobile App Developer ",
+      "Game Developer ",
+      "Data Scientist ",
+      "AI Scientist ",
+      "Machine Learning Scientist ",
+      "IT Trainer ",
+      "Media Editor "
+    ]
+  },
+  "cv": "cv.pdf"
 }
