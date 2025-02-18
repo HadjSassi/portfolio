@@ -33,18 +33,9 @@ import {ActivatedRoute, Router} from '@angular/router';
 export class HomeComponent implements OnInit, AfterViewInit{
   constructor(private route: ActivatedRoute, private router: Router) {}
 
-  showBackToTopButton = false;
-  scrollThreshold = 50;
 
-  @HostListener('window:scroll', ['$event'])
-  onScroll(event: Event): void {
-    const currentScrollPosition =
-      window.pageYOffset ||
-      document.documentElement.scrollTop ||
-      document.body.scrollTop ||
-      0;
-    this.showBackToTopButton = currentScrollPosition > this.scrollThreshold;
-  }
+
+
 
   ngOnInit() {
     // Scroll to the section if there's an initial fragment.
@@ -84,13 +75,5 @@ export class HomeComponent implements OnInit, AfterViewInit{
     );
 
     sections.forEach(section => observer.observe(section));
-  }
-
-  scrollToBottom(): void {
-    window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
-  }
-
-  scrollToTop(): void {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 }

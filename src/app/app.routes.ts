@@ -9,9 +9,11 @@ import {PortfolioComponent} from './portfolio/portfolio.component';
 import {AchievementsComponent} from './achievements/achievements.component';
 import {SocialLifeComponent} from './social-life/social-life.component';
 import {ReviewsComponent} from './reviews/reviews.component';
+import {ItTrainerComponent} from './it-trainer/it-trainer.component';
 
 export const routes: Routes = [
   { path: 'home', component: HomeComponent },
+  { path: 'itTrainer', component: ItTrainerComponent },
   // { path: 'about', component: AboutComponent },
   // { path: 'qualification', component: ExperienceComponent },
   // { path: 'skill', component: SkillsComponent },

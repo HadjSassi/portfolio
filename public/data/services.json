@@ -29,7 +29,7 @@
       "icon": "fa-graduation-cap",
       "title": "IT Trainings",
       "description": "Delivered IT training sessions in multiple fields, including web development, Git and GitHub, Linux, and various programming languages.",
-      "link": "itTrainer.html",
+      "link": "/itTrainer",
       "linkText": "Read More"
     }
   ]
