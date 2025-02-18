@@ -1,0 +1,16 @@
+{
+  "name": "HADJ SASSI Mahdi",
+  "birthday": "1 Mai 2000",
+  "degree": "Engineering",
+  "experience": "6 Years",
+  "phone": "+33 7 45 48 80 29",
+  "email": "mahdihadjsassi1@gmail.com",
+  "address": "25, BD Oise, Cergy 95000, France",
+  "freelance": "Available",
+  "links": {
+    "linkedin": "https://www.linkedin.com/in/mahdi-hadj-sassi/",
+    "github": "https://github.com/HadjSassi"
+  },
+  "description": "I am a highly motivated and versatile engineering student currently pursuing a dual degree program between the École Nationale Supérieure d'Ingénieurs de Tunis (ENSIT) and the École Nationale Supérieure de l'Électronique et de ses Applications (ENSEA) in France. With a strong foundation in software development, artificial intelligence, and embedded systems, I have consistently excelled in both academic and extracurricular pursuits.",
+  "image": "about3.png"
+}

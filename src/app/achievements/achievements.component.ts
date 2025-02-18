@@ -32,7 +32,6 @@ export class AchievementsComponent implements OnInit {
   }
 
   fetchAchievements() {
-    //todo fix all the rest of the achivements entries
     this.http.get<{ achievements: AchievementCategory[] }>('data/achievements.json').subscribe(data => {
       this.achievements = data.achievements;
     });

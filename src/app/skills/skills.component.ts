@@ -28,7 +28,6 @@ export class SkillsComponent implements AfterViewInit {
   }
 
   private loadSkills() {
-    //todo correct the entries from the data file.
     this.http.get<Skill[]>('data/skills.json')
       .subscribe(data => {
         this.skills = data;
