@@ -1,0 +1,165 @@
+{
+  "trainings": [
+    {
+      "title": "ARES Ensea CSS Training",
+      "description": "Continuing from the first training session on HTML for ARES at ENSEA, this 2-hour online session took place on Thursday, December 19. The focus was on the fundamentals of CSS, including an introduction to selectors, methods to manipulate them, and the process of integrating CSS with HTML to create visually appealing web pages.",
+      "images": ["portfolio/trainings/trainingCssAres/1.jpg"],
+      "videos": []
+    },
+    {
+      "title": "ARES HTML Training",
+      "description": "The ARES Web Development Training Series kicked off on Saturday, December 14, 2024. This 4-hour session served as a comprehensive introduction to web development, exploring the fundamental concepts of the development process.",
+      "images": [
+        "portfolio/trainings/trainingHtmlAres/1.jpg",
+        "portfolio/trainings/trainingHtmlAres/2.jpg",
+        "portfolio/trainings/trainingHtmlAres/4.jpg",
+        "portfolio/trainings/trainingHtmlAres/5.jpg",
+        "portfolio/trainings/trainingHtmlAres/6.jpg",
+        "portfolio/trainings/trainingHtmlAres/7.jpg"
+      ],
+      "videos": []
+    },
+    {
+      "title": "ARES Git and GitHub Training",
+      "description": "The first session of the Git and GitHub workshop took place on Friday, November 15, 2024. This event introduced participants to the foundational concepts of Git and GitHub.",
+      "images": [
+        "portfolio/trainings/trainingGitEnsea/1.jpg",
+        "portfolio/trainings/trainingGitEnsea/2.jpg",
+        "portfolio/trainings/trainingGitEnsea/4.jpg",
+        "portfolio/trainings/trainingGitEnsea/5.jpg",
+        "portfolio/trainings/trainingGitEnsea/6.jpg",
+        "portfolio/trainings/trainingGitEnsea/7.jpg"
+      ],
+      "videos": []
+    },
+    {
+      "title": "Google FSB Git Training",
+      "description": "The first session of the Git and GitHub workshop took place on Friday, November 25, 2024, Online. This event introduced participants to foundational concepts of Git and GitHub.",
+      "images": ["portfolio/trainings/trainingGitGoogleFsb/1.jpg"],
+      "videos": []
+    },
+    {
+      "title": "Geeks Git Training",
+      "description": "The first session of the Git and GitHub workshop took place on Friday, October 5, 2024, Online. This event introduced participants to foundational concepts of Git and GitHub.",
+      "images": ["portfolio/trainings/trainingGitGeeks/1.jpg"],
+      "videos": []
+    },
+    {
+      "title": "ARES Linux Training",
+      "description": "ARES invited me to conduct a workshop on Linux to support their work with the ROS framework. Participants installed VirtualBox and configured Linux, ensuring a proper setup for seamless integration with ROS.",
+      "images": [
+        "portfolio/trainings/trainingLinuxEnsea/1.jpg",
+        "portfolio/trainings/trainingLinuxEnsea/2.jpg",
+        "portfolio/trainings/trainingLinuxEnsea/4.jpg",
+        "portfolio/trainings/trainingLinuxEnsea/5.jpeg",
+        "portfolio/trainings/trainingLinuxEnsea/6.jpeg",
+        "portfolio/trainings/trainingLinuxEnsea/7.jpeg"
+      ],
+      "videos": ["portfolio/trainings/trainingLinuxEnsea/8.mp4"]
+    },
+    {
+      "title": "IEEE ISTIC Git Training",
+      "description": "The first session of the Git and GitHub workshop took place on Friday, July 18, 2024, Online. This event introduced participants to the foundational concepts of Git and GitHub.",
+      "images": ["portfolio/trainings/trainingIeeeGit/istic.jpg"],
+      "videos": []
+    },
+    {
+      "title": "Talend Training",
+      "description": "I shared insights on completing an ETL task using Talend in a workshop session for my 2nd-year Software Engineering classmates.",
+      "images": ["portfolio/trainings/trainingTalend/1.jpg"],
+      "videos": []
+    },
+    {
+      "title": "IEEE CS FSB Streamlit Training",
+      "description": "I conducted an online Streamlit training session for the IEEE Faculty of Science of Bizerte Student Branch, covering the basics of Streamlit.",
+      "images": ["portfolio/trainings/trainingStreamlit/1.jpg"],
+      "videos": []
+    },
+    {
+      "title": "IEEE ENSIT WIE Training",
+      "description": "I introduced kids to the basics of algorithms through the Scratch application as part of a journey organized by the WIE Affinity Group of IEEE ENSIT.",
+      "images": [
+        "portfolio/trainings/trainingWie/1.jpg",
+        "portfolio/trainings/trainingWie/2.jpg"
+      ],
+      "videos": []
+    },
+    {
+      "title": "Geeks Machine Learning Training",
+      "description": "I conducted machine learning training sessions for the ENSIT Geeks Club, covering supervised and unsupervised machine learning.",
+      "images": [
+        "portfolio/trainings/trainingGeeksMl/1.jpg",
+        "portfolio/trainings/trainingGeeksMl/2.jpg",
+        "portfolio/trainings/trainingGeeksMl/3.jpg",
+        "portfolio/trainings/trainingGeeksMl/4.jpg",
+        "portfolio/trainings/trainingGeeksMl/5.jpg",
+        "portfolio/trainings/trainingGeeksMl/6.jpg",
+        "portfolio/trainings/trainingGeeksMl/7.jpg",
+        "portfolio/trainings/trainingGeeksMl/8.jpg"
+      ],
+      "videos": []
+    },
+    {
+      "title": "IEEE ENSIT ML Training",
+      "description": "I conducted machine learning training sessions at ENSIT, exploring supervised and unsupervised machine learning.",
+      "images": [
+        "portfolio/trainings/trainingIeeeMl/1.jpg",
+        "portfolio/trainings/trainingIeeeMl/2.jpg",
+        "portfolio/trainings/trainingIeeeMl/4.jpg",
+        "portfolio/trainings/trainingIeeeMl/5.jpg",
+        "portfolio/trainings/trainingIeeeMl/6.jpg",
+        "portfolio/trainings/trainingIeeeMl/7.jpg",
+        "portfolio/trainings/trainingIeeeMl/8.jpg"
+      ],
+      "videos": ["portfolio/trainings/trainingIeeeMl/9.mp4"]
+    },
+    {
+      "title": "Geeks Hack Workshop",
+      "description": "I was invited to share my problem-solving skills with colleagues, explaining algorithms and discussing programming languages.",
+      "images": [
+        "portfolio/trainings/trainingGeeksHack/1.jpg",
+        "portfolio/trainings/trainingGeeksHack/2.jpg",
+        "portfolio/trainings/trainingGeeksHack/3.jpg",
+        "portfolio/trainings/trainingGeeksHack/4.jpg",
+        "portfolio/trainings/trainingGeeksHack/5.jpg",
+        "portfolio/trainings/trainingGeeksHack/6.jpg"
+      ],
+      "videos": []
+    },
+    {
+      "title": "GLSI Class Training",
+      "description": "I led various training sessions and workshops at the Faculty of Science of Bizerte, covering topics like JakartaEE and Database Management.",
+      "images": [
+        "portfolio/trainings/GLSITrainings/1.jpeg",
+        "portfolio/trainings/GLSITrainings/2.jpeg",
+        "portfolio/trainings/GLSITrainings/3.png",
+        "portfolio/trainings/GLSITrainings/4.jpeg",
+        "portfolio/trainings/GLSITrainings/5.jpg",
+        "portfolio/trainings/GLSITrainings/6.jpg",
+        "portfolio/trainings/GLSITrainings/7.jpg",
+        "portfolio/trainings/GLSITrainings/8.jpg"
+      ],
+      "videos": [
+        "portfolio/trainings/GLSITrainings/formation%20agile.mp4",
+        "portfolio/trainings/GLSITrainings/formation%20SOA%20intellij%20By%20Mahdi.mp4",
+        "portfolio/trainings/GLSITrainings/javafx,%20mysql%20configuration.mp4"
+      ]
+    },
+    {
+      "title": "AOC Python Training",
+      "description": "My first planned training session at the university was a milestone I will never forget, focusing on the basics of Python.",
+      "images": [
+        "portfolio/trainings/trainingAocPython/0.jpg",
+        "portfolio/trainings/trainingAocPython/1.jpg",
+        "portfolio/trainings/trainingAocPython/2.jpg",
+        "portfolio/trainings/trainingAocPython/4.jpg",
+        "portfolio/trainings/trainingAocPython/5.jpeg",
+        "portfolio/trainings/trainingAocPython/6.jpg"
+      ],
+      "videos": [
+        "portfolio/trainings/trainingAocPython/7.mp4",
+        "portfolio/trainings/trainingAocPython/8.mp4"
+      ]
+    }
+  ]
+}
