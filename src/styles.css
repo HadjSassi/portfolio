@@ -5,6 +5,10 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -9809,18 +9813,31 @@ h6,
   left: calc(50% - 10px);
   bottom: 30px;
   z-index: 11;
+  font-size: 2rem;
   animation: action 1s infinite alternate;
 }
 
 .back-to-top {
   position: fixed;
-  display: none;
-  width: 30px;
+  width: 50px; /* Set width */
+  height: 50px; /* Set height to match width for circular shape */
   text-align: center;
   right: 30px;
   bottom: 30px;
+  background-color: white; /* Background color */
+  color: #0f307c; /* Text color */
+  border-radius: 50%; /* Make it circular */
   z-index: 11;
-  animation: action 1s infinite alternate;
+  font-size: 2rem; /* Icon size */
+  display: flex; /* Center the icon */
+  align-items: center; /* Vertically center */
+  justify-content: center; /* Horizontally center */
+  animation: action 1s infinite alternate; /* Your existing animation */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+}
+
+.back-to-top:hover {
+  background-color: #f0f0f0; /* Change background on hover */
 }
 
 @keyframes action {
@@ -10076,18 +10093,3 @@ h6,
   margin-top: 1rem;
 }
 
-.scroll-to-bottom {
-  position: fixed;
-  bottom: 60px; /* Adjust as needed */
-  right: 20px; /* Adjust as needed */
-  cursor: pointer;
-  z-index: 1000; /* Ensure it stays on top */
-}
-
-.back-to-top {
-  position: fixed;
-  bottom: 20px; /* Adjust as needed */
-  right: 20px; /* Adjust as needed */
-  cursor: pointer;
-  z-index: 1000; /* Ensure it stays on top */
-}

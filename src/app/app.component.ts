@@ -1,24 +1,14 @@
-import { Component } from '@angular/core';
-import {NavbarComponent} from './navbar/navbar.component';
-import {RouterOutlet} from '@angular/router';
+import { Component, HostListener } from '@angular/core';
+import { NavbarComponent } from './navbar/navbar.component';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [NavbarComponent, RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
   title = 'HADJ SASSI';
-
-  scrollToBottom() {
-    window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
-  }
-
-  scrollToTop() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
-
 }
-
