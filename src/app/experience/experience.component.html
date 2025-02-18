@@ -1,171 +1,35 @@
 <div class="container-fluid py-5" id="qualification">
   <div class="container">
     <div class="position-relative d-flex align-items-center justify-content-center">
-      <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Expericence</h1>
-      <h1 class="position-absolute text-uppercase text-primary">Education & Expericence</h1>
+      <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Experience</h1>
+      <h1 class="position-absolute text-uppercase text-primary">Education & Experience</h1>
     </div>
     <div class="row align-items-center">
       <div class="col-lg-6">
         <h3 class="mb-4">My Education</h3>
         <div class="border-left border-primary pt-2 pl-4 ml-2">
-          <div class="position-relative mb-4">
+          <div *ngFor="let edu of education" class="position-relative mb-4">
             <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-            <h5 class="font-weight-bold mb-1">Software Engineering (Dual Degree)</h5>
-            <p class="mb-2"><strong><a href="https://www.ensea.fr">ENSEA</a></strong> | <small>2024 -
-              2026</small></p>
-            <p>I am currently pursuing a dual-degree program in computer engineering at the École Nationale
-              Supérieure de l'Électronique et de ses Applications (ENSEA) in France, with a focus on
-              embedded systems, software development, and AI. This program is part of a special
-              partnership between ENSEA and my previous school, the École Nationale Supérieure
-              d'Ingénieurs de Tunis (ENSIT). The partnership allows elite students to complete their
-              second year of studies at ENSEA and finish their degree in France. </p>
-          </div>
-          <div class="position-relative mb-4">
-            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-            <h5 class="font-weight-bold mb-1">Software Engineering</h5>
-            <p class="mb-2"><strong><a href="https://www.ensit.tn">ENSIT</a></strong> | <small>2022 -
-              2026</small></p>
-            <p>I am enrolled in the École Nationale Supérieure d'Ingénieurs de Tunis (ENSIT), having been
-              accepted through the highly competitive concours spécifique for entry into engineering
-              schools. While the standard program lasts three years, I am pursuing a four-year track due
-              to my dual-degree program with ENSEA in France. During my first two years at ENSIT, I was
-              the top student in both my promotion and the entire school, an achievement that granted me
-              the opportunity to continue my studies in France through the partnership with ENSEA.</p>
-          </div>
-          <div class="position-relative mb-4">
-            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-            <h5 class="font-weight-bold mb-1">Bachelor In Software Engineering</h5>
-            <p class="mb-2"><strong><a href="https://www.fsb.rnu.tn/">FSB</a></strong> | <small>2019 -
-              2022</small></p>
-            <p>I graduated in 2022 from the Faculty of Science of Bizerte with a degree in Software
-              Engineering and Information Systems. Throughout the three years of my undergraduate studies,
-              I consistently excelled academically, earning the title of top student in my class each
-              year.</p>
-          </div>
-          <div class="position-relative mb-4">
-            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-            <h5 class="font-weight-bold mb-1">Baccalaureate in Mathematics</h5>
-            <p class="mb-2"><strong>ASSAD IBN EL FOURAT High School</strong> | <small>2016 -
-              2019</small></p>
-            <p>I attended Assad Ibn El Fourat High School, where I graduated in 2019 with a Baccalaureate in
-              Mathematics, earning the mention Assez Bien. I began my high school journey in 2016 in the
-              second-year science stream, progressed to the third-year mathematics stream, and ultimately
-              specialized in mathematics for my final year.</p>
-          </div>
-          <div class="position-relative mb-4">
-            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-            <h5 class="font-weight-bold mb-1">English C1 Level</h5>
-            <p class="mb-2"><strong><a href="https://www.amideast.org/tunisia">Amideast</a></strong> |
-              <small>2016 - 2018</small></p>
-            <p>Enrolled at AMIDEAST Tunisia in 2016, initially starting with an A2 level of proficiency in
-              the language. Over the course of two years, I dedicated myself to improving my skills and
-              successfully achieved a C1 level.</p>
-          </div>
-          <div class="position-relative mb-4">
-            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-            <p class="mb-2"><strong>OUED ELLLIL High School</strong> | <small>2015 -
-              2016</small></p>
-            <p>I initially attended Oued Ellil High School in 2015, where I completed my first year of
-              secondary education before transferring to Assad Ibn El Fourat High School to continue my
-              studies.</p>
-          </div>
-          <div class="position-relative mb-4">
-            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-            <p class="mb-2"><strong>CHEBAW College</strong> | <small>2012 -
-              2015</small></p>
-            <p>I studied at Chebbaw Middle School from 2012 to 2015, which is the educational level between
-              primary school and high school.</p>
-          </div>
-          <div class="position-relative mb-4">
-            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-            <p class="mb-2"><strong>RACHED Primary School</strong> | <small>2006 -
-              2012</small></p>
-            <p>I began my education at Rached Primary School in Mannouba, where I studied from 2006,
-              starting at the age of 6, until 2012.</p>
+            <h5 class="font-weight-bold mb-1">{{ edu.degree }}</h5>
+            <p class="mb-2"><strong><a target="_blank" [href]="edu.institutionLink">{{ edu.institution }}</a></strong> | <small>{{ edu.duration }}</small></p>
+            <p>{{ edu.description }}</p>
           </div>
         </div>
       </div>
       <div class="col-lg-6">
-        <h3 class="mb-4">My Expericence</h3>
+        <h3 class="mb-4">My Experience</h3>
         <div class="border-left border-primary pt-2 pl-4 ml-2">
-          <div class="position-relative mb-4">
+          <div *ngFor="let exp of experience" class="position-relative mb-4">
             <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-            <h5 class="font-weight-bold mb-1">PFA: Desktop app for Quiz Creation</h5>
-            <p class="mb-2"><strong><a href="https://www.ensea.fr">ENSEA</a></strong> | <small>17/09/2024 -
-              01/04/2025</small></p>
-            <p>Developed a desktop application for creating quizzes and exams, inspired by the AMC
-              application. The tool allows for the efficient creation of various question types and
-              supports machine-based automatic grading, streamlining the assessment process. The project
-              is currently in progress.
-            </p>
-            Using <span class="text-info">JavaFX, MySQL, LaTeX</span>
-
-          </div>
-          <div class="position-relative mb-4">
-            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-            <h5 class="font-weight-bold mb-1">PFA: GameDev for simulating student Life in ENSIT</h5>
-            <p class="mb-2"><strong><a href="https://www.ensit.tn">ENSIT</a></strong> | <small>01/02/2024 -
-              02/05/2024
-            </small></p>
-            <p>Developed a virtual tour application for the École Nationale Supérieure d'Ingénieurs de Tunis
-              (ENSIT). The application allows users to explore the ENSIT campus through an immersive
-              experience, offering interactive exploration. </p>
-            Using <span class="text-info">C#, Unity, Blender, Meshroom, ReadyPlayerMe</span>
-          </div>
-          <div class="position-relative mb-4">
-            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-            <h5 class="font-weight-bold mb-1">Summer Internship: Design and develop an automation
-              application for Trading</h5>
-            <p class="mb-2"><strong>HELCHI Solution</strong> | <small>01/06/2023 - 01/07/2023</small></p>
-            <p>Designed and developed an automation application for trading, utilizing algorithms such as
-              Trix and Cocotier. After completing the initial tasks, implemented web scraping techniques
-              to select the best products to trade from Amazon, enhancing the application’s functionality
-              and decision-making process.</p>
-            Using <span class="text-info">Python, Streamlit, Selenium, JungleScout</span>
-
-          </div>
-          <div class="position-relative mb-4">
-            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-            <h5 class="font-weight-bold mb-1">PFA: E-Commerce Web and Mobile Dev</h5>
-            <p class="mb-2"><strong><a href="https://www.ensit.tn">ENSIT</a></strong> | <small>02/02/2023 -
-              28/05/2023</small></p>
-            <p>
-              This project involved building both the front-end and back-end components, ensuring seamless
-              integration between the web and mobile platforms. The application aimed to provide a smooth
-              user experience for browsing and purchasing products while ensuring efficient data
-              management with MySQL.
-            </p>
-            Using <span class="text-info">Angular, Ionic6, Spring, MySql</span>
-
-          </div>
-          <div class="position-relative mb-4">
-            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-            <h5 class="font-weight-bold mb-1">PFE: Design And Develop U-BooK Application</h5>
-            <p class="mb-2"><strong><a href="https://www.fsb.rnu.tn">FSB</a></strong> | <small>01/02/2022 -
-              31/05/2022</small></p>
-            <p>
-              Final Year Project (Bachelor's Degree in Computer Science and Engineering): Developed a
-              university social media platform for exchanging documents and resources. The project
-              consists of three main components: the entrepreneurial idea and business management, the
-              development of the application’s infrastructure, and the integration of artificial
-              intelligence to manage processes within the platform, enhancing its functionality and user
-              experience.
-            </p>
-            Using <span class="text-info">Angular, Spring, MySql, Python, SickitLearn</span>
-
-          </div>
-          <div class="position-relative mb-4">
-            <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
-            <h5 class="font-weight-bold mb-1">Freelance</h5>
-            <p class="mb-2"><small>2022</small></p>
-            <p>
-              Freelance work in media editing, including picture and video editing, as well as in the
-              development of applications and algorithms. These projects provided valuable experience and
-              financial support, serving as a starting point for my career.
-            </p>
+            <h5 class="font-weight-bold mb-1">{{ exp.title }}</h5>
+            <p class="mb-2"><strong><a target="_blank" [href]="exp.institutionLink">{{ exp.institution }}</a></strong> | <small>{{ exp.duration }}</small></p>
+            <p>{{ exp.description }}</p>
+            <p *ngIf="exp.technologies.length > 0">Using <span class="text-info">{{ exp.technologies.join(', ') }}</span></p>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+

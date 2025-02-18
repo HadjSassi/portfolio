@@ -1,11 +1,16 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import experienceData from '../../../public/data/experience.json';
+import {CommonModule} from '@angular/common';
 
 @Component({
   selector: 'app-experience',
-  imports: [],
   templateUrl: './experience.component.html',
-  styleUrl: './experience.component.css'
+  imports: [CommonModule],
+  styleUrls: ['./experience.component.css']
 })
-export class ExperienceComponent {
+export class ExperienceComponent implements OnInit {
+  education = experienceData.education;
+  experience = experienceData.experience;
 
+  ngOnInit() {}
 }
