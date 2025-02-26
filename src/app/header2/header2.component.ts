@@ -18,6 +18,7 @@ export class Header2Component  {
   @Input() profileImage: string = '';
   @Input() titlePage: string = '';
   @Input() titlePage2: string = '';
-  about = aboutData;
+  // @ts-ignore
+  about = aboutData[this.language];
 
 }

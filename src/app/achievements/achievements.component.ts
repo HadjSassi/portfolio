@@ -2,21 +2,33 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import {CommonModule} from '@angular/common';
 import config from '../../../public/config/achievements.json';
+import achievementData from '../../../public/data/achievements.json';
 
-interface Achievement {
+interface AchievementItem {
   title: string;
   date: string;
   location: string;
   description: string;
+  description2: string;
   link: string;
   id: string;
   images: string[];
   videos: string[];
 }
 
+
 interface AchievementCategory {
   category: string;
-  items: Achievement[];
+  items: AchievementItem[];
+}
+
+interface AchievementData {
+  en: {
+    achievements: AchievementCategory[];
+  };
+  fr: {
+    achievements: AchievementCategory[];
+  };
 }
 
 @Component({
@@ -34,12 +46,13 @@ export class AchievementsComponent implements OnInit {
   constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
-    this.fetchAchievements();
+    this.loadAchievements();
   }
 
-  fetchAchievements() {
-    this.http.get<{ achievements: AchievementCategory[] }>('data/achievements.json').subscribe(data => {
-      this.achievements = data.achievements;
-    });
+  private loadAchievements(): void {
+    const achievements: AchievementData = achievementData;
+    // @ts-ignore
+    this.achievements = achievements[this.language].achievements;
   }
+
 }

@@ -21,7 +21,8 @@ export class HeaderComponent implements OnInit {
   config = config[this.language];
   // Add a template reference variable for the modal element.
   @ViewChild('videoModal', { static: false }) videoModal!: ElementRef;
-  about = aboutData;
+  // @ts-ignore
+  about = aboutData[this.language];
   sanitizedVideoIframe: any;
 
   constructor(private sanitizer: DomSanitizer) {}

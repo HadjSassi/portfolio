@@ -9,5 +9,7 @@ import {CommonModule} from '@angular/common';
   styleUrl: './footer.component.css'
 })
 export class FooterComponent {
-  about = aboutData;
+  language: string = 'en';
+  // @ts-ignore
+  about = aboutData[this.language];
 }

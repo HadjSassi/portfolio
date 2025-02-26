@@ -14,5 +14,6 @@ export class AboutComponent {
   language: string = 'en';
   // @ts-ignore
   config = config[this.language];
-  about = aboutData;
+  // @ts-ignore
+  about = aboutData[this.language];
 }
