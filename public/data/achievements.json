@@ -9,7 +9,18 @@
           "location": "Novation City",
           "description": "Won the prize in the ARSII Data Science Contest with the project \"SmartEval: Système d'Évaluation Intelligente pour un Apprentissage Interactif.\" This marked the user's third participation, showcasing expertise in developing intelligent and interactive learning evaluation systems in collaboration with another team.",
           "link": "https://arsii.org/",
-          "mediaLink": "portfolio/Achievements/ARSII3/index.html"
+          "id": "ARSII3",
+          "images": [
+            "portfolio/Achievements/ARSII3/1.jpg",
+            "portfolio/Achievements/ARSII3/2.jpg",
+            "portfolio/Achievements/ARSII3/3.jpg",
+            "portfolio/Achievements/ARSII3/4.jpg",
+            "portfolio/Achievements/ARSII3/5.jpg"
+          ],
+          "videos": [
+            "portfolio/Achievements/ARSII3/6.mp4",
+            "portfolio/Achievements/ARSII3/7.mp4"
+          ]
         },
         {
           "title": "IEEE CS TSYP11 : 2nd Prize",
@@ -17,7 +28,17 @@
           "location": "Diar El Medina Hammamet Hotel",
           "description": "Secured 2nd prize in the TSYP 11 IEEE CS Challenge for the project \"Deep-fake Forensics TSYP11 CS.\" Led the team to achieve the first-ever prize for the IEEE ENSIT Student Branch.",
           "link": "https://www.diarlemdina.medinahotelsandresorts.com/",
-          "mediaLink": "portfolio/Achievements/tsyp11%20ieee%20cs/index.html"
+          "id": "tsyp11 ieee cs",
+          "images": [
+            "portfolio/Achievements/tsyp11 ieee cs/1.jpg",
+            "portfolio/Achievements/tsyp11 ieee cs/2.jpg",
+            "portfolio/Achievements/tsyp11 ieee cs/3.jpg",
+            "portfolio/Achievements/tsyp11 ieee cs/4.jpg"
+          ],
+          "videos": [
+            "portfolio/Achievements/tsyp11 ieee cs/5.mp4",
+            "portfolio/Achievements/tsyp11 ieee cs/6.mp4"
+          ]
         },
         {
           "title": "AI Night Challenge 2nd Edition",
@@ -25,7 +46,19 @@
           "location": "Novation City",
           "description": "Won the prize in the ARSII Data Science Contest with the project \"AI News Radar\" by Pristini The AI University. This marked the user's second participation, developing an application that allows users to check for recent AI-related news using web scraping and machine learning.",
           "link": "https://www.novationcity.com/",
-          "mediaLink": "portfolio/Achievements/ARSII2/index.html"
+          "id": "ARSII2",
+          "images": [
+            "portfolio/Achievements/ARSII2/1.jpg",
+            "portfolio/Achievements/ARSII2/2.jpg",
+            "portfolio/Achievements/ARSII2/3.jpg",
+            "portfolio/Achievements/ARSII2/4.jpg",
+            "portfolio/Achievements/ARSII2/5.jpg",
+            "portfolio/Achievements/ARSII2/6.jpg"
+          ],
+          "videos": [
+            "portfolio/Achievements/ARSII2/7.mp4",
+            "portfolio/Achievements/ARSII2/8.mp4"
+          ]
         },
         {
           "title": "IEEE ESSTHS : Game On",
@@ -33,7 +66,13 @@
           "location": "ESSTHS",
           "description": "Achieved 2nd place in the IEEE ESSTHS Game Development Contest by creating a 3D survival shooter game, developed within 8 hours.",
           "link": "https://essths.rnu.tn/public/",
-          "mediaLink": "portfolio/Achievements/IEEE%20essths%20game%20on/index.html"
+          "id": "IEEE essths game on",
+          "images": [],
+          "videos": [
+            "portfolio/Achievements/IEEE essths game on/1.mp4",
+            "portfolio/Achievements/IEEE essths game on/2.mp4",
+            "portfolio/Achievements/IEEE essths game on/3.mp4"
+          ]
         },
         {
           "title": "GEEKS Hack 2.0",
@@ -41,7 +80,17 @@
           "location": "ENSIT Geeks Club",
           "description": "Scared To Compile team earned 2nd place in the 24-hour Hackathon, demonstrating strong problem-solving skills and effective performance under time pressure.",
           "link": "https://www.ensitgeeksclub.com",
-          "mediaLink": "portfolio/Achievements/Geeks%20hack%202.0/index.html"
+          "id": "Geeks hack 2.0",
+          "images": [
+            "portfolio/Achievements/Geeks hack 2.0/1.jpg",
+            "portfolio/Achievements/Geeks hack 2.0/2.jpg",
+            "portfolio/Achievements/Geeks hack 2.0/3.jpg",
+            "portfolio/Achievements/Geeks hack 2.0/4.jpg",
+            "portfolio/Achievements/Geeks hack 2.0/5.jpg"
+          ],
+          "videos": [
+            "portfolio/Achievements/Geeks hack 2.0/6.mp4"
+          ]
         },
         {
           "title": "IEEEXtreme 16.0",
@@ -49,7 +98,9 @@
           "location": "IEEE Ensit SB",
           "description": "With team Keranis, earned the title of Second Best Team at ENSIT and ranked among the top 70 teams in the Tunisia Section during the IEEEXtreme 16.0 programming competition.",
           "link": "https://ensit.ieee.tn",
-          "mediaLink": "https://ieeextreme.org/ieeextreme-16-0-ranking/"
+          "id": "https://ieeextreme.org/ieeextreme-16-0-ranking/",
+          "images": [],
+          "videos": []
         },
         {
           "title": "IEEE FST Hackathon",
@@ -57,7 +108,13 @@
           "location": "City of Science of Tunisia",
           "description": "Achieved 2nd place in the 24-hour problem-solving Hackathon organized by IEEE FST, demonstrating strong analytical and collaborative skills under pressure.",
           "link": "http://www.cst.rnu.tn/",
-          "mediaLink": "portfolio/Achievements/FST%20hackathon/index.html"
+          "id": "FST hackathon",
+          "images": [
+            "portfolio/Achievements/FST hackathon/1.jpg",
+            "portfolio/Achievements/FST hackathon/2.jpg",
+            "portfolio/Achievements/FST hackathon/3.jpg"
+          ],
+          "videos": []
         }
       ]
     },
@@ -70,7 +127,18 @@
           "location": "Diar El Medina Hammamet Hotel",
           "description": "Won the IEEE Tunisia Section Student Paper Contest 2023 with the paper titled \"Implementation for Data Science Aspect on the U-Book App.\" Competing among top student researchers in Tunisia.",
           "link": "https://www.diarlemdina.medinahotelsandresorts.com/",
-          "mediaLink": "portfolio/papierScientifique.pdf"
+          "id": "papierScientifique",
+          "images": [
+            "portfolio/Achievements/ieee spc/1.jpg",
+            "portfolio/Achievements/ieee spc/2.jpg",
+            "portfolio/Achievements/ieee spc/3.JPG",
+            "portfolio/Achievements/ieee spc/4.jpg"
+          ],
+          "videos": [
+            "portfolio/Achievements/ieee spc/5.mp4",
+            "portfolio/Achievements/ieee spc/6.mp4",
+            "portfolio/Achievements/ieee spc/7.mp4"
+          ]
         },
         {
           "title": "PEEC Innov'Startup 2.0 Final",
@@ -78,7 +146,22 @@
           "location": "Sup'Com",
           "description": "Participated in the Innov'startup 2.0 entrepreneurship competition organized by PEEC with the Ubook project, placing 5th out of 120 projects.",
           "link": "https://www.supcom.tn/",
-          "mediaLink": "portfolio/Achievements/peec/index.html"
+          "id": "peec",
+          "images": [
+            "portfolio/Achievements/peec/insat/1.jpg",
+            "portfolio/Achievements/peec/insat/2.jpg",
+            "portfolio/Achievements/peec/insat/3.jpg",
+            "portfolio/Achievements/peec/insat/4.jpg",
+            "portfolio/Achievements/peec/insat/5.jpg",
+            "portfolio/Achievements/peec/insat/6.jpg",
+            "portfolio/Achievements/peec/supcom/1.jpg",
+            "portfolio/Achievements/peec/supcom/2.jpg",
+            "portfolio/Achievements/peec/supcom/3.jpg"
+          ],
+          "videos": [
+            "portfolio/Achievements/peec/supcom/4.mp4",
+            "portfolio/Achievements/peec/supcom/5.mp4"
+          ]
         },
         {
           "title": "EFE Contest",
@@ -86,7 +169,13 @@
           "location": "FSB",
           "description": "Competed in the EFE entrepreneurship contest, securing 4th place in the final round, demonstrating strong entrepreneurial skills and innovative thinking.",
           "link": "https://www.fsb.rnu.tn",
-          "mediaLink": "portfolio/Achievements/efe/index.html"
+          "id": "efe",
+          "images": [
+            "portfolio/Achievements/efe/1.jpg"
+          ],
+          "videos": [
+            "portfolio/Achievements/efe/2.mp4"
+          ]
         }
       ]
     }

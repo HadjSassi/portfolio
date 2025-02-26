@@ -8,7 +8,7 @@ interface Achievement {
   location: string;
   description: string;
   link: string;
-  mediaLink: string;
+  id: string;
 }
 
 interface AchievementCategory {

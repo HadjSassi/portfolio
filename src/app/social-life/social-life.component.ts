@@ -5,7 +5,7 @@ import {CommonModule} from '@angular/common';
 interface SocialActivity {
   title: string;
   image: string;
-  link: string;
+  id: string;
 }
 
 @Component({
@@ -30,6 +30,6 @@ export class SocialLifeComponent implements OnInit {
   }
 
   openLink(link: string) {
-    window.open(link, '_blank');
+    window.open("SocialLife/"+link, '_blank');
   }
 }

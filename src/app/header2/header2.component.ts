@@ -13,6 +13,7 @@ import aboutData from '../../../public/data/about.json';
 export class Header2Component  {
   @Input() profileImage: string = '';
   @Input() titlePage: string = '';
+  @Input() titlePage2: string = '';
   about = aboutData;
 
 }

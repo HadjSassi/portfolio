@@ -24,7 +24,7 @@
           <p>{{ article.description }}</p>
         </div>
       </div>
-      <div class="col-lg-6">
+      <div *ngIf="article.images.length !== 0" class="col-lg-6">
         <div class="custom-carousel">
           <button class="prev-btn" (click)="prevSlide()" *ngIf="article.images.length > 1" aria-label="Previous image">❮</button>
           <div>
