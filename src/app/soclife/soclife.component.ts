@@ -18,7 +18,7 @@ import {CommonModule} from '@angular/common';
   styleUrl: './soclife.component.css'
 })
 export class SoclifeComponent implements OnInit {
-  profileImage: string = "HadjSassi2.png";
+  profileImage: string = "img/HadjSassi2.png";
   titlePage: string = "";
   titlePage2: string = "";
   titleArticle: string = "";

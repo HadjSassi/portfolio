@@ -8,8 +8,11 @@
       <div class="col-md-3" *ngFor="let skill of skills">
         <div class="skill mb-4">
           <div class="d-flex justify-content-between">
-            <img [src]="skill.logo" alt="{{ skill.name }}" class="skill-logo"/>
-            <h6 class="font-weight-bold">{{ skill.name }}</h6>
+            <img
+              [src]="skill.logo"
+              alt="{{ skill.name }}"
+              class="skill-logo"
+              [attr.style]="skill.style ? skill.style : null" />            <h6 class="font-weight-bold">{{ skill.name }}</h6>
             <h6 class="font-weight-bold skill-percentage" [attr.data-target]="skill.percentage">0%</h6>
           </div>
           <div class="progress">

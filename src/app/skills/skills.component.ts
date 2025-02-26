@@ -6,7 +6,8 @@ interface Skill {
   name: string;
   percentage: number;
   logo: string;
-  color: string; // Add color property
+  color: string;
+  style: string;
 }
 
 @Component({

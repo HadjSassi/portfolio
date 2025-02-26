@@ -18,7 +18,7 @@ import {CommonModule} from '@angular/common';
   styleUrl: './it-trainer.component.css'
 })
 export class ItTrainerComponent implements OnInit{
-  profileImage: string = "HadjSassisamll.png";
+  profileImage: string = "img/HadjSassisamll.png";
   titlePage: string = "An It Trainer";
   titleArticle: string = "Training";
   trainings = trainerData.trainings;

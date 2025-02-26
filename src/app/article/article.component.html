@@ -21,7 +21,7 @@
     <div class="row align-items-start">
       <div class="col-lg-6">
         <div>
-          <p>{{ article.description }}</p>
+          <p [innerHTML]="article.description2"></p>
         </div>
       </div>
       <div *ngIf="article.images.length !== 0" class="col-lg-6">

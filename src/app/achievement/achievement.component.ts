@@ -19,7 +19,7 @@ import {ActivatedRoute} from '@angular/router';
   styleUrl: './achievement.component.css'
 })
 export class AchievementComponent implements OnInit {
-  profileImage: string = "achiev.png";
+  profileImage: string = "img/achiev.png";
   titlePage: string = "An Achiever";
   titlePage2: string = "";
   titleArticle: string = "Achievement";
@@ -29,6 +29,7 @@ export class AchievementComponent implements OnInit {
     date: string;
     location: string;
     description: string;
+    description2: string;
     link: string;
     id: string;
     images: string[];

@@ -32,8 +32,9 @@
   {
     "name": "JavaFx",
     "percentage": 60,
-    "logo": "https://cdn.freebiesupply.com/logos/large/2x/spring-3-logo-png-transparent.png",
-    "color": "#6DB33F"
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/3/30/JavaFX_text_logo.png",
+    "color": "#6DB33F",
+    "style": "width: 20%"
   },
   {
     "name": "Junit",
@@ -69,7 +70,8 @@
     "name": "PHP",
     "percentage": 60,
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/2560px-PHP-logo.svg.png",
-    "color": "#4F5B93"
+    "color": "#4F5B93",
+    "style": "width: 20%"
   },
   {
     "name": "JavaScript",
@@ -99,7 +101,8 @@
     "name": "Databases",
     "percentage": 75,
     "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Sql_data_base_with_logo.png/640px-Sql_data_base_with_logo.png",
-    "color": "#FCA121"
+    "color": "#FCA121",
+    "style": "width: 20%"
   },
   {
     "name": "UML",
@@ -123,7 +126,8 @@
     "name": "LaTeX",
     "percentage": 60,
     "logo": "https://upload.wikimedia.org/wikipedia/commons/9/92/LaTeX_logo.svg",
-    "color": "#008080"
+    "color": "#008080",
+    "style": "width: 20%"
   },
   {
     "name": "Git",

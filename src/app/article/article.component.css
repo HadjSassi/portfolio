@@ -41,3 +41,9 @@
 .prev-btn:hover, .next-btn:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
+
+p {
+  text-align: justify;
+  font-size: 120%;
+}
+
