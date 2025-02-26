@@ -14,8 +14,10 @@ export class ExperienceComponent implements OnInit {
   language: string = 'en';
   // @ts-ignore
   config = config[this.language];
-  education = experienceData.education;
-  experience = experienceData.experience;
+  // @ts-ignore
+  education = experienceData[this.language].education;
+  // @ts-ignore
+  experience = experienceData[this.language].experience;
 
   ngOnInit() {}
 }

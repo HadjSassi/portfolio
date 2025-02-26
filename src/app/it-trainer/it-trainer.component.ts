@@ -24,10 +24,11 @@ export class ItTrainerComponent implements OnInit{
   // @ts-ignore
   config = config[this.language];
   // @ts-ignore
-  profileImage: string = data["itTrainerImage"];
+  profileImage: string = data[this.language]["itTrainerImage"];
   titlePage: string = this.config.titlePage;
   titleArticle: string = this.config.titleArticle;
-  trainings = trainerData.trainings;
+  // @ts-ignore
+  trainings = trainerData[this.language].trainings;
 
   ngOnInit() {}
 

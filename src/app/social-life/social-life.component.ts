@@ -29,7 +29,8 @@ export class SocialLifeComponent implements OnInit {
 
   fetchSocialActivities() {
     this.http.get<{ socialActivities: SocialActivity[] }>('data/social.json').subscribe(data => {
-      this.socialActivities = data.socialActivities;
+      // @ts-ignore
+      this.socialActivities = data[this.language].socialActivities;
     });
   }
 

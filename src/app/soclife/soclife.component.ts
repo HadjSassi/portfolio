@@ -20,8 +20,9 @@ import data from '../../../public/data/about.json';
   styleUrl: './soclife.component.css'
 })
 export class SoclifeComponent implements OnInit {
+  language: string = 'en';
   // @ts-ignore
-  profileImage: string = data["socialLifeImage"];
+  profileImage: string = data[this.language]["socialLifeImage"];
   titlePage: string = "";
   titlePage2: string = "";
   titleArticle: string = "";
@@ -42,7 +43,8 @@ export class SoclifeComponent implements OnInit {
 
   ngOnInit(): void {
     this.name = this.route.snapshot.paramMap.get('name') || '';
-    const allArticles = socialLife.socialActivities;
+    // @ts-ignore
+    const allArticles = socialLife[this.language].socialActivities;
     // @ts-ignore
     this.article = allArticles.find(item => item.id === this.name);
     // @ts-ignore

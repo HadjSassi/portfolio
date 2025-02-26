@@ -4,8 +4,6 @@ import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs';
 import config from '../../../public/config/reviews.json';
 
-declare var bootstrap: any;
-
 interface Review {
   text: string;
   imageAbout: string;
@@ -30,7 +28,8 @@ export class ReviewsComponent implements AfterViewInit {
 
   ngAfterViewInit() {
     this.fetchReviews().subscribe(data => {
-      this.reviews = data.reviews;
+      // @ts-ignore
+      this.reviews = data[this.language].reviews;
     });
   }
 

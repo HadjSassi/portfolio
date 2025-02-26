@@ -21,5 +21,6 @@ export class ServicesComponent {
   language: string = 'en';
   // @ts-ignore
   config = config[this.language];
-  services: Service[] = servicesData.services; // Specify the type
+  // @ts-ignore
+  services: Service[] = servicesData[this.language].services;
 }
