@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import {CommonModule, NgOptimizedImage} from '@angular/common';
+import {CommonModule} from '@angular/common';
 
 interface SocialActivity {
   title: string;
@@ -12,7 +12,7 @@ interface SocialActivity {
   selector: 'app-social-life',
   templateUrl: './social-life.component.html',
   styleUrls: ['./social-life.component.css'],
-  imports: [CommonModule, NgOptimizedImage]
+  imports: [CommonModule]
 })
 export class SocialLifeComponent implements OnInit {
   socialActivities: SocialActivity[] = [];

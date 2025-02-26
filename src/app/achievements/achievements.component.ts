@@ -9,6 +9,8 @@ interface Achievement {
   description: string;
   link: string;
   id: string;
+  images: string[];
+  videos: string[];
 }
 
 interface AchievementCategory {

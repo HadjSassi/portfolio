@@ -17,7 +17,7 @@
                 <small>{{ item.date }}</small>
               </p>
               <p [innerHTML]="item.description"></p>
-              <p>
+              <p *ngIf="item.images.length !== 0 || item.videos.length!==0">
                 <a target="_blank" [href]="'Achievements/'+item.id">Check Media</a>
               </p>
             </div>
