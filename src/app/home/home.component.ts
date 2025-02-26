@@ -33,10 +33,6 @@ import {ActivatedRoute, Router} from '@angular/router';
 export class HomeComponent implements OnInit, AfterViewInit{
   constructor(private route: ActivatedRoute, private router: Router) {}
 
-
-
-
-
   ngOnInit() {
     // Scroll to the section if there's an initial fragment.
     this.route.fragment.subscribe(fragment => {

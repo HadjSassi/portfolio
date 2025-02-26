@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import aboutData from '../../../public/data/about.json';
 import {CommonModule} from '@angular/common';
+import config from '../../../public/config/about.json';
 
 
 @Component({
@@ -10,6 +11,8 @@ import {CommonModule} from '@angular/common';
   styleUrl: './about.component.css'
 })
 export class AboutComponent {
-  //todo fix all the public Data
+  language: string = 'en';
+  // @ts-ignore
+  config = config[this.language];
   about = aboutData;
 }

@@ -4,6 +4,7 @@ import { NgxTypedJsModule } from 'ngx-typed-js';
 import { TypedTextComponent } from '../typed-text/typed-text.component';
 import aboutData from '../../../public/data/about.json';
 import { CommonModule } from '@angular/common';
+import config from '../../../public/config/header.json';
 
 declare var bootstrap: any;
 
@@ -15,6 +16,9 @@ declare var bootstrap: any;
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
+  language: string = 'en';
+  // @ts-ignore
+  config = config[this.language];
   // Add a template reference variable for the modal element.
   @ViewChild('videoModal', { static: false }) videoModal!: ElementRef;
   about = aboutData;

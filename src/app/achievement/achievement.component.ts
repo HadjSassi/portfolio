@@ -2,9 +2,11 @@ import {Component, OnInit} from '@angular/core';
 import {Header2Component} from '../header2/header2.component';
 import {FooterComponent} from '../footer/footer.component';
 import achievementData from '../../../public/data/achievements.json';
+import aboutData from '../../../public/data/about.json';
 import {CommonModule} from '@angular/common';
 import {ArticleComponent} from '../article/article.component';
 import {ActivatedRoute} from '@angular/router';
+import config from '../../../public/config/achievement.json';
 
 
 @Component({
@@ -19,10 +21,13 @@ import {ActivatedRoute} from '@angular/router';
   styleUrl: './achievement.component.css'
 })
 export class AchievementComponent implements OnInit {
-  profileImage: string = "img/achiev.png";
-  titlePage: string = "An Achiever";
+  language: string = 'en';
+  // @ts-ignore
+  config = config[this.language];
+  profileImage: string = aboutData["achievementImage"];
+  titlePage: string = this.config.titlePage;
   titlePage2: string = "";
-  titleArticle: string = "Achievement";
+  titleArticle: string = this.config.titleArticle;
   name: string | undefined;
   achievement: {
     title: string;

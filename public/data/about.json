@@ -14,8 +14,11 @@
     "instagram": "https://www.instagram.com/hadj_sassi.ezzedine.mahdi/"
   },
   "description": "I am a highly motivated and versatile engineering student currently pursuing a dual degree program\n                    between the École Nationale Supérieure d'Ingénieurs de Tunis <a\n           target='_blank'                 href=\"https://www.ensit.tn/\">(ENSIT)</a> and the École Nationale\n                    Supérieure de l'Électronique et de ses Applications <a target='_blank' href=\"https://www.ensea.fr/\">(ENSEA)</a> in\n                    France. With a strong foundation in\n                    software development, artificial intelligence, and embedded systems, I have consistently excelled in\n                    both academic and extracurricular pursuits.",
-  "image": "img/about3.png",
+  "imageAbout": "img/about3.png",
   "profileImage": "img/profile.png",
+  "achievementImage": "img/achiev.png",
+  "itTrainerImage": "img/HadjSassisamll.png",
+  "socialLifeImage": "img/HadjSassi2.png",
   "videoIframe": "<iframe width='560' height='315' src='https://www.youtube.com/embed/cXCgT-_6474?si=_KxtLToxJtPxymkP' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' referrerpolicy='strict-origin-when-cross-origin' allowfullscreen></iframe>",
   "footer": {
     "message": "&copy;HADJ SASSI. All Rights Reserved. Designed by HADJ SASSI Mahdi"

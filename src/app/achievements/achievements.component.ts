@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import {CommonModule} from '@angular/common';
+import config from '../../../public/config/achievements.json';
 
 interface Achievement {
   title: string;
@@ -25,6 +26,9 @@ interface AchievementCategory {
   imports: [CommonModule]
 })
 export class AchievementsComponent implements OnInit {
+  language: string = 'en';
+  // @ts-ignore
+  config = config[this.language];
   achievements: AchievementCategory[] = [];
 
   constructor(private http: HttpClient) {}

@@ -2,12 +2,13 @@ import { AfterViewInit, Component, Renderer2 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs';
+import config from '../../../public/config/reviews.json';
 
 declare var bootstrap: any;
 
 interface Review {
   text: string;
-  image: string;
+  imageAbout: string;
   name: string;
   position: string;
 }
@@ -20,6 +21,9 @@ interface Review {
   styleUrls: ['./reviews.component.css']
 })
 export class ReviewsComponent implements AfterViewInit {
+  language: string = 'en';
+  // @ts-ignore
+  config = config[this.language];
   reviews: Review[] = [];
 
   constructor(private http: HttpClient) {}
@@ -27,13 +31,6 @@ export class ReviewsComponent implements AfterViewInit {
   ngAfterViewInit() {
     this.fetchReviews().subscribe(data => {
       this.reviews = data.reviews;
-
-      const carouselElement = document.getElementById('carouselExampleIndicators');
-      const carousel = new bootstrap.Carousel(carouselElement, {
-        interval: 3000,  // 3 seconds automatic transition
-        wrap: true,      // Wrap around when reaching the end
-        ride: 'carousel' // Ensures the carousel auto-cycles when the page is ready
-      });
     });
   }
 

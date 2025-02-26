@@ -1,6 +1,7 @@
 import { Component, ElementRef, Renderer2, AfterViewInit, HostListener } from '@angular/core';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
 import {CommonModule} from '@angular/common';
+import config from '../../../public/config/skills.json';
 
 interface Skill {
   name: string;
@@ -18,6 +19,9 @@ interface Skill {
   imports: [HttpClientModule, CommonModule]
 })
 export class SkillsComponent implements AfterViewInit {
+  language: string = 'en';
+  // @ts-ignore
+  config = config[this.language];
   skills: Skill[] = [];
   private hasAnimated: boolean = false;
 

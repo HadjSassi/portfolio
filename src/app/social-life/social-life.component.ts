@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import {CommonModule} from '@angular/common';
+import config from '../../../public/config/social.json';
 
 interface SocialActivity {
   title: string;
-  image: string;
+  imageAbout: string;
   id: string;
 }
 
@@ -15,6 +16,9 @@ interface SocialActivity {
   imports: [CommonModule]
 })
 export class SocialLifeComponent implements OnInit {
+  language: string = 'en';
+  // @ts-ignore
+  config = config[this.language];
   socialActivities: SocialActivity[] = [];
 
   constructor(private http: HttpClient) {}

@@ -4,6 +4,8 @@ import {FooterComponent} from '../footer/footer.component';
 import {ArticleComponent} from '../article/article.component';
 import trainerData from '../../../public/data/trainer.json';
 import {CommonModule} from '@angular/common';
+import data from "../../../public/data/about.json"
+import config from '../../../public/config/itTrainer.json';
 
 
 @Component({
@@ -18,9 +20,13 @@ import {CommonModule} from '@angular/common';
   styleUrl: './it-trainer.component.css'
 })
 export class ItTrainerComponent implements OnInit{
-  profileImage: string = "img/HadjSassisamll.png";
-  titlePage: string = "An It Trainer";
-  titleArticle: string = "Training";
+  language: string = 'en';
+  // @ts-ignore
+  config = config[this.language];
+  // @ts-ignore
+  profileImage: string = data["itTrainerImage"];
+  titlePage: string = this.config.titlePage;
+  titleArticle: string = this.config.titleArticle;
   trainings = trainerData.trainings;
 
   ngOnInit() {}

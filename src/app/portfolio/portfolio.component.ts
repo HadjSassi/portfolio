@@ -2,10 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 import { trigger, transition, style, animate } from '@angular/animations';
+import config from '../../../public/config/portfolio.json';
 
 interface PortfolioItem {
   name: string;
-  image: string;
+  imageAbout: string;
   link: string;
   category: string;
 }
@@ -28,6 +29,9 @@ interface PortfolioItem {
   ]
 })
 export class PortfolioComponent implements OnInit {
+  language: string = 'en';
+  // @ts-ignore
+  config = config[this.language];
   portfolioItems: PortfolioItem[] = [];
   filteredItems: PortfolioItem[] = [];
 

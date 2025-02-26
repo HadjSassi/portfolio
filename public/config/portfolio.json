@@ -1,0 +1,18 @@
+{
+  "en": {
+    "title": "Gallery",
+    "subTitle": "My Portfolio",
+    "all": "All",
+    "web": "Web App",
+    "game": "Game App",
+    "datascience": "DataScience"
+  },
+  "fr": {
+    "title": "Gallery22",
+    "subTitle": "My Portfolio22",
+    "all": "All22",
+    "web": "Web App22",
+    "game": "Game App22",
+    "datascience": "DataScience22"
+  }
+}

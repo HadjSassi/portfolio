@@ -31,12 +31,12 @@
           class="font-weight-light h1 text-white">
         </app-typed-text>
         <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
-          <a [href]="about.cv" target="_blank" class="btn btn-outline-light mr-5">Check CV</a>
+          <a [href]="about.cv" target="_blank" class="btn btn-outline-light mr-5">{{config.cv}}</a>
           <!-- Removed data attributes and used Angular click binding -->
           <button type="button" class="btn-play" (click)="openModal()">
             <span></span>
           </button>
-          <h5 class="font-weight-normal text-white m-0 ml-4 d-none d-sm-block">Play Video</h5>
+          <h5 class="font-weight-normal text-white m-0 ml-4 d-none d-sm-block">{{config.video}}</h5>
         </div>
       </div>
     </div>

@@ -5,6 +5,8 @@ import {Header2Component} from '../header2/header2.component';
 import {ActivatedRoute} from '@angular/router';
 import socialLife from '../../../public/data/social.json';
 import {CommonModule} from '@angular/common';
+import data from '../../../public/data/about.json';
+
 
 @Component({
   selector: 'app-soclife',
@@ -18,7 +20,8 @@ import {CommonModule} from '@angular/common';
   styleUrl: './soclife.component.css'
 })
 export class SoclifeComponent implements OnInit {
-  profileImage: string = "img/HadjSassi2.png";
+  // @ts-ignore
+  profileImage: string = data["socialLifeImage"];
   titlePage: string = "";
   titlePage2: string = "";
   titleArticle: string = "";

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import servicesData from '../../../public/data/services.json';
 import {CommonModule} from '@angular/common';
+import config from '../../../public/config/services.json';
 
 interface Service {
   icon: string;
@@ -17,5 +18,8 @@ interface Service {
   styleUrls: ['./services.component.css']
 })
 export class ServicesComponent {
+  language: string = 'en';
+  // @ts-ignore
+  config = config[this.language];
   services: Service[] = servicesData.services; // Specify the type
 }
