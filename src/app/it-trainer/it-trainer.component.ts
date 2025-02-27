@@ -20,15 +20,25 @@ import config from '../../../public/config/itTrainer.json';
   styleUrl: './it-trainer.component.css'
 })
 export class ItTrainerComponent implements OnInit{
-  language: string = 'en';
-  // @ts-ignore
-  config = config[this.language];
-  // @ts-ignore
-  profileImage: string = data[this.language]["itTrainerImage"];
-  titlePage: string = this.config.titlePage;
-  titleArticle: string = this.config.titleArticle;
-  // @ts-ignore
-  trainings = trainerData[this.language].trainings;
+  language: string;
+  config : any;
+  profileImage: string ;
+  titlePage: string;
+  titleArticle: string;
+  trainings : any ;
+
+  constructor() {
+    this.language = localStorage.getItem('appLanguage') || 'en';
+    // @ts-ignore
+    this.config = config[this.language];
+    // @ts-ignore
+    this.profileImage = data[this.language]["itTrainerImage"];
+    this.titlePage = this.config.titlePage;
+    this.titleArticle = this.config.titleArticle;
+    // @ts-ignore
+    this.trainings = trainerData[this.language].trainings;
+
+  }
 
   ngOnInit() {}
 

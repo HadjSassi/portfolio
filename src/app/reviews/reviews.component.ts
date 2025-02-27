@@ -19,12 +19,16 @@ interface Review {
   styleUrls: ['./reviews.component.css']
 })
 export class ReviewsComponent implements AfterViewInit {
-  language: string = 'en';
+  language: string;
   // @ts-ignore
-  config = config[this.language];
+  config: any;
   reviews: Review[] = [];
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) {
+    this.language = localStorage.getItem('appLanguage') || 'en';
+    // @ts-ignore
+    this.config = config[this.language];
+  }
 
   ngAfterViewInit() {
     this.fetchReviews().subscribe(data => {

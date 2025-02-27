@@ -38,12 +38,16 @@ interface AchievementData {
   imports: [CommonModule]
 })
 export class AchievementsComponent implements OnInit {
-  language: string = 'en';
+  language: string;
   // @ts-ignore
-  config = config[this.language];
+  config:any ;
   achievements: AchievementCategory[] = [];
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) {
+    this.language = localStorage.getItem('appLanguage') || 'en';
+    // @ts-ignore
+    this.config = config[this.language];
+  }
 
   ngOnInit(): void {
     this.loadAchievements();

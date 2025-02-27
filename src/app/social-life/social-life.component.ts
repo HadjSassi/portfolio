@@ -16,12 +16,16 @@ interface SocialActivity {
   imports: [CommonModule]
 })
 export class SocialLifeComponent implements OnInit {
-  language: string = 'en';
+  language: string;
   // @ts-ignore
-  config = config[this.language];
+  config:any;
   socialActivities: SocialActivity[] = [];
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) {
+    this.language = localStorage.getItem('appLanguage') || 'en';
+    // @ts-ignore
+    this.config = config[this.language];
+  }
 
   ngOnInit(): void {
     this.fetchSocialActivities();

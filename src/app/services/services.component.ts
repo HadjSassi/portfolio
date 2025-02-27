@@ -18,9 +18,14 @@ interface Service {
   styleUrls: ['./services.component.css']
 })
 export class ServicesComponent {
-  language: string = 'en';
-  // @ts-ignore
-  config = config[this.language];
-  // @ts-ignore
-  services: Service[] = servicesData[this.language].services;
+  language: string ;
+  config: any;
+  services: Service[] = [];
+  constructor() {
+    this.language = localStorage.getItem('appLanguage') || 'en';
+    // @ts-ignore
+    this.config = config[this.language];
+    // @ts-ignore
+    this.services = servicesData[this.language].services;
+  }
 }

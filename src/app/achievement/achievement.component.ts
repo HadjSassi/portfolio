@@ -51,18 +51,24 @@ interface AchievementData {
 })
 
 export class AchievementComponent implements OnInit {
-  language: string = 'en';
-  // @ts-ignore
-  config = config[this.language];
-  // @ts-ignore
-  profileImage: string = aboutData[this.language]["achievementImage"];
-  titlePage: string = this.config.titlePage;
+  language: string;
+  config : any;
+  profileImage: string = "";
+  titlePage: string ;
   titlePage2: string = "";
-  titleArticle: string = this.config.titleArticle;
+  titleArticle: string ;
   name: string | undefined;
   achievement: AchievementItem | undefined;
 
   constructor(private route: ActivatedRoute) {
+    this.language = localStorage.getItem('appLanguage') || 'en';
+    // @ts-ignore
+    this.config = config[this.language];
+    // @ts-ignore
+    this.profileImage = aboutData[this.language]["achievementImage"];
+    this.titlePage = this.config.titlePage;
+    this.titlePage2 = "";
+    this.titleArticle = this.config.titleArticle;
   }
 
   ngOnInit(): void {

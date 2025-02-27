@@ -37,6 +37,9 @@
             <span></span>
           </button>
           <h5 class="font-weight-normal text-white m-0 ml-4 d-none d-sm-block">{{config.video}}</h5>
+          <button class="btn btn-outline-light ml-4" (click)="toggleLanguage()">
+            {{ language === 'en' ? 'Changer vers le Français' : 'Change to English' }}
+          </button>
         </div>
       </div>
     </div>

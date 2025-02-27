@@ -11,13 +11,21 @@ import config from '../../../public/config/experience.json';
   styleUrls: ['./experience.component.css']
 })
 export class ExperienceComponent implements OnInit {
-  language: string = 'en';
-  // @ts-ignore
-  config = config[this.language];
-  // @ts-ignore
-  education = experienceData[this.language].education;
-  // @ts-ignore
-  experience = experienceData[this.language].experience;
+  language: string;
+  config: any;
+  education: any;
+  experience: any;
 
-  ngOnInit() {}
+  constructor() {
+    this.language = localStorage.getItem('appLanguage') || 'en';
+    // @ts-ignore
+    this.config = config[this.language];
+    // @ts-ignore
+    this.education = experienceData[this.language].education;
+    // @ts-ignore
+    this.experience = experienceData[this.language].experience;
+  }
+
+  ngOnInit() {
+  }
 }

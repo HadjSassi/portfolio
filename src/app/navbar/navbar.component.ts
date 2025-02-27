@@ -11,13 +11,17 @@ import config from '../../../public/config/navbar.json';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-  language: string = 'en';
+  language: string ;
   // @ts-ignore
-  config = config[this.language];
+  config: any;
   currentFragment: string | null = null;
   isNavbarVisible = false;
 
-  constructor(private router: Router) {}
+  constructor(private router: Router) {
+    this.language = localStorage.getItem('appLanguage') || 'en';
+    // @ts-ignore
+    this.config = config[this.language];
+  }
 
   ngOnInit(): void {
     // Set the initial fragment from the URL (if any)

@@ -20,9 +20,9 @@ import data from '../../../public/data/about.json';
   styleUrl: './soclife.component.css'
 })
 export class SoclifeComponent implements OnInit {
-  language: string = 'en';
+  language: string;
   // @ts-ignore
-  profileImage: string = data[this.language]["socialLifeImage"];
+  profileImage: string;
   titlePage: string = "";
   titlePage2: string = "";
   titleArticle: string = "";
@@ -39,6 +39,10 @@ export class SoclifeComponent implements OnInit {
   } | undefined;
 
   constructor(private route: ActivatedRoute) {
+    this.language = localStorage.getItem('appLanguage') || 'en';
+    // @ts-ignore
+    this.profileImage = data[this.language]["socialLifeImage"];
+
   }
 
   ngOnInit(): void {

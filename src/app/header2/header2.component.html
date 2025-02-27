@@ -16,6 +16,9 @@
         </h2>
         <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
           <a [href]="about.cv" target="_blank" class="btn btn-outline-light mr-5">{{config.video}}</a>
+          <button class="btn btn-outline-light ml-4" (click)="toggleLanguage()">
+            {{ language === 'en' ? 'Changer vers le Français' : 'Change to English' }}
+          </button>
         </div>
       </div>
     </div>

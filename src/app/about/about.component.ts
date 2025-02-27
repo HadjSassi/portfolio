@@ -11,9 +11,15 @@ import config from '../../../public/config/about.json';
   styleUrl: './about.component.css'
 })
 export class AboutComponent {
-  language: string = 'en';
-  // @ts-ignore
-  config = config[this.language];
-  // @ts-ignore
-  about = aboutData[this.language];
+  language: string ;
+  config : any;
+  about : any;
+
+  constructor() {
+    this.language = localStorage.getItem('appLanguage') || 'en';
+    // @ts-ignore
+    this.config = config[this.language];
+    // @ts-ignore
+    this.about = aboutData[this.language];
+  }
 }

@@ -19,13 +19,17 @@ interface Skill {
   imports: [HttpClientModule, CommonModule]
 })
 export class SkillsComponent implements AfterViewInit {
-  language: string = 'en';
+  language: string;
   // @ts-ignore
-  config = config[this.language];
+  config: any
   skills: Skill[] = [];
   private hasAnimated: boolean = false;
 
-  constructor(private el: ElementRef, private renderer: Renderer2, private http: HttpClient) {}
+  constructor(private el: ElementRef, private renderer: Renderer2, private http: HttpClient) {
+    this.language = localStorage.getItem('appLanguage') || 'en';
+    // @ts-ignore
+    this.config = config[this.language];
+  }
 
   ngAfterViewInit() {
     this.loadSkills();

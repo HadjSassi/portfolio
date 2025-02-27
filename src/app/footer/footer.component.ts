@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import aboutData from '../../../public/data/about.json';
 import {CommonModule} from '@angular/common';
+import {environment} from '../environment/environment';
 
 @Component({
   selector: 'app-footer',
@@ -9,7 +10,11 @@ import {CommonModule} from '@angular/common';
   styleUrl: './footer.component.css'
 })
 export class FooterComponent {
-  language: string = 'en';
-  // @ts-ignore
-  about = aboutData[this.language];
+  language: string;
+  about:any ;
+  constructor() {
+    this.language = localStorage.getItem('appLanguage') || 'en';
+    // @ts-ignore
+    this.about = aboutData[this.language];
+  }
 }
