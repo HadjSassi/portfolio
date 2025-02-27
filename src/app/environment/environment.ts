@@ -1,3 +1,4 @@
 export const environment = {
-  language: 'en'
+  language: 'en',
+  apiUrl: 'https://www.hadjsassi.tunissportsuniversity.tn/',
 };
