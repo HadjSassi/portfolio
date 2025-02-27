@@ -30,10 +30,10 @@ interface PortfolioItem {
 })
 export class PortfolioComponent implements OnInit {
   language: string;
-  // @ts-ignore
   config : any;
   portfolioItems: PortfolioItem[] = [];
   filteredItems: PortfolioItem[] = [];
+  activeCategory: string = '*';
 
   constructor(private http: HttpClient) {
     this.language = localStorage.getItem('appLanguage') || 'en';
@@ -53,6 +53,7 @@ export class PortfolioComponent implements OnInit {
   }
 
   filterPortfolio(category: string) {
+    this.activeCategory = category;
     this.filteredItems = [];
     setTimeout(() => {
       this.filteredItems = category === '*' ? this.portfolioItems : this.portfolioItems.filter(item => item.category === category);
