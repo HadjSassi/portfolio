@@ -12,15 +12,15 @@
     "Hire": "Hire Me"
   },
   "fr": {
-    "Home": "Home22",
-    "About": "About22",
-    "Experience": "Experience22",
-    "Skill": "Skill22",
-    "Service": "Service22",
-    "Portfolio": "Portfolio22",
-    "Achievements": "Achievements22",
-    "Social": "Social Life22",
-    "Review": "Review22",
-    "Hire": "Hire Me22"
+    "Home": "Accueil",
+    "About": "À propos",
+    "Experience": "Expérience",
+    "Skill": "Compétence",
+    "Service": "Service",
+    "Portfolio": "Portfolio",
+    "Achievements": "Réalisations",
+    "Social": "Vie sociale",
+    "Review": "Avis",
+    "Hire": "Embauchez-moi"
   }
 }
