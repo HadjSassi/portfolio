@@ -19,7 +19,12 @@
   height: 300px;
   object-fit: cover;
   flex-shrink: 0;
-  transition: opacity 0.5s ease-in-out;
+  transition: filter 0.3s ease, cursor 0.3s ease;
+}
+
+.carousel-image:hover {
+  cursor: pointer;  /* Change cursor to pointer */
+  filter: brightness(50%);
 }
 
 /* Navigation Buttons */

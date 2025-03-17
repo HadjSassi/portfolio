@@ -5,7 +5,8 @@
     "all": "All",
     "web": "Web App",
     "game": "Game App",
-    "datascience": "DataScience"
+    "datascience": "DataScience",
+    "desktop": "Desktop"
   },
   "fr": {
     "title": "Galerie",
@@ -13,6 +14,7 @@
     "all": "Tous",
     "web": "Application Web",
     "game": "Application de Jeu",
-    "datascience": "DataScience"
+    "datascience": "DataScience",
+    "desktop": "Application Bureau"
   }
 }
