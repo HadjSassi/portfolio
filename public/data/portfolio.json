@@ -44,7 +44,7 @@
   {
     "name": "ENSEA AMC",
     "imageAbout": "img/amcensea.png",
-    "link": "portfolio/ENSEA_AMC installer.exe",
+    "link": "https://github.com/HadjSassi/QuizEnsea",
     "category": "fourth"
   }
 ]
